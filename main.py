@@ -167,18 +167,95 @@ def main():
 
 
 def parse_str(_str):
-    if 'exit' in _str:
+    if any(k in _str for k in ['exit', 'e']):
         return lambda x: exit(0)
 
-    if 'selectdb' in _str:
-        return selectdb
+    if any(k in _str for k in ['select_db', 'sd']):
+        return select_db
+
+    if any(k in _str for k in ['select_tree', 'st']):
+        return select_tree
+
+    if any(k in _str for k in ['add_node', 'an']):
+        return add_node(_str)
+
 
     return lambda x: print ('unknown command')
 
 current_tree = {}  # словарь айди - нода
 
+def _add_node_to_db(node):
+    pass
 
-def selectdb (_str):
+def add_node(_str):
+    try:
+        sl = _str.split(' ')
+        id = int (sl[1])
+
+        parents = input('parents []')
+        children = input('children []')
+
+        prev = input('prev []')
+        _next = input('next []')
+
+        if not children:
+            _buy = input('buy []')
+
+        deadline = input('datetime')
+        season = input('season ((6,1),(8,31)) сезон, месяц-дата, месяц-дата') #
+        tags = input('tags')
+        text = input('text')
+        shortText = input('shortText')
+        urgency = input('urgency - nm')
+        significance = input('significance')   # доля от итогового результата, контроль 100% не выполняется
+
+        node = Group() if children else Leaf()
+
+        node.id = id
+        node.parents = parents
+        node.children = children
+        node.prev = prev
+        node.next = _next
+
+        if not children:
+            node._buy = _buy
+
+        node.deadline = deadline
+        node.season = season
+        node.tags = tags
+        node.text = text
+        node.shortText = shortText
+        node.urgency = urgency
+        node.significance = significance
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    except Exception as e:
+        print ('Add Node Failed, due to ', e)
+
+
+
+
+
+
+def select_db (_str):
     """
     Команда обновления текущего дерева
     обращает к БД запрос select * from cases where <-и вот в этом месте _str
@@ -206,7 +283,10 @@ def selectdb (_str):
 
 
 
+
 def show_current_tree():
+    if not current_tree:
+        print ('Current Tree is empty. If it really not, try to select_db')
     for k, v in current_tree.items():
         if not v.parents:
             print (v)
@@ -221,12 +301,16 @@ def select_tree(_str):
     :param _str:
     :return:
     """
-
+    if not current_tree:
+        print ('Current Tree is empty. If it really not, try to select_db')
     try:
-        pass
+        lstr = _str.split(' ') #распарсили
+        id = int(lstr[1])
+        print (current_tree[id])
 
-    except:
-        print ('select_tree commend failed')
+    except Exception as e:
+        print ('select_tree commend failed, due to exception ', e)
+
 
 
 initFile()
