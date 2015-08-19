@@ -187,14 +187,34 @@ current_tree = {}  # словарь айди - нода
 def _add_node_to_db(node):
     pass
 
+
+def safe_eval_lst (subj):
+    try:
+        return eval(subj)
+    except:
+        return []
+
+def safe_eval_str (subj):
+    try:
+        return eval(subj)
+    except:
+        return ''
+
+
+def safe_eval_season (subj):
+    try:
+        return eval(subj)
+    except:
+        return ((),() )
+
+
 def add_node(_str):
     """
 
     :param _str:
     :return:
     """
-    #FIXME переписать с особой жестокостью, потому что тут нет eval. А eval может и None вернуть,
-    #FIXME тут придётся преобразовать его в пустой список
+
 
     try:
         sl = _str.split(' ')
@@ -220,39 +240,21 @@ def add_node(_str):
         node = Group() if children else Leaf()
 
         node.id = id
-        node.parents = parents
-        node.children = children
-        node.prev = prev
-        node.next = _next
+        node.parents = safe_eval_lst(parents)
+        node.children = safe_eval_lst(children)
+        node.prev = safe_eval_lst(prev)
+        node.next = safe_eval_lst(_next)
 
         if not children:
             node._buy = _buy
 
-        node.deadline = deadline
-        node.season = season
+        node.deadline = datetime.date(datetime)
+        node.season = safe_eval_season(season)
         node.tags = tags
         node.text = text
         node.shortText = shortText
-        node.urgency = urgency
-        node.significance = significance
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        node.urgency = int(urgency)
+        node.significance = int(significance)
 
 
     except Exception as e:
