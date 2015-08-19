@@ -188,6 +188,14 @@ def _add_node_to_db(node):
     pass
 
 def add_node(_str):
+    """
+
+    :param _str:
+    :return:
+    """
+    #FIXME переписать с особой жестокостью, потому что тут нет eval. А eval может и None вернуть,
+    #FIXME тут придётся преобразовать его в пустой список
+
     try:
         sl = _str.split(' ')
         id = int (sl[1])
