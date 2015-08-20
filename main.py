@@ -8,28 +8,6 @@ import datetime
 
 filename = 'cases.db'
 
-def initFile ():
-    global filename
-    con = sqlite3.connect('users.db')
-    cur = con.cursor()
-    cur.execute("""CREATE TABLE IF NOT EXISTS cases (id INTEGER PRIMARY KEY,
-                                                    ifgroup INTEGER,
-                                                    self.parents = TEXT
-                                                    self.children = TEXT
-                                                    self.prev = TEXT
-                                                    self.next = TEXT
-                                                    self._buy = TEXT
-                                                    self.deadline = TEXT
-                                                    self.season = TEXT
-                                                    self._made = INTEGER
-                                                    self.tags = TEXT
-                                                    self.text = TEXT
-                                                    self.shortText = TEXT
-                                                    self.urgency = INTEGER
-                                                    self.significance = INTEGER
-                                                    )""")
-    con.commit()
-
 
 class AbstractNode ():
     """
@@ -134,6 +112,31 @@ class Group(AbstractNode):
 
 
 
+
+def initFile ():
+    global filename
+    con = sqlite3.connect('users.db')
+    cur = con.cursor()
+    cur.execute("""CREATE TABLE IF NOT EXISTS cases (id INTEGER PRIMARY KEY,
+                                                    ifgroup INTEGER,
+                                                    self.parents = TEXT
+                                                    self.children = TEXT
+                                                    self.prev = TEXT
+                                                    self.next = TEXT
+                                                    self._buy = TEXT
+                                                    self.deadline = TEXT
+                                                    self.season = TEXT
+                                                    self._made = INTEGER
+                                                    self.tags = TEXT
+                                                    self.text = TEXT
+                                                    self.shortText = TEXT
+                                                    self.urgency = INTEGER
+                                                    self.significance = INTEGER
+                                                    )""")
+    con.commit()
+
+
+
 def insertObjectToBd(node):
     """
     Обновить объект в базе данных
@@ -182,7 +185,7 @@ def parse_str(_str):
 
     return lambda x: print ('unknown command')
 
-current_tree = {}  # словарь айди - нода
+
 
 def _add_node_to_db(node):
     pass
@@ -262,6 +265,7 @@ def add_node(_str):
 
 
 
+current_tree = {}  # словарь айди - нода
 
 
 
