@@ -144,8 +144,8 @@ renew_current_forest(pars=None)
 <XPD:OBJ name="OwnedViews[4]" type="UMLClassView" guid="nTucevqTQESPHhUGCgI0xAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">828</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">616</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">768</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">652</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">120</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">69</XPD:ATTR>
 <XPD:REF name="Model">wpKzKIaRGEGfgYRjfZBOoQAA</XPD:REF>
@@ -189,7 +189,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[6]" type="UMLNoteLinkView" guid="nUCJx5A8JEqcAmeWcnqHhAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">947,646;1032,641</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">887,677;1032,654</XPD:ATTR>
 <XPD:REF name="Head">tIdvIY5HQkCYyGBYVorGBAAA</XPD:REF>
 <XPD:REF name="Tail">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
 </XPD:OBJ>
@@ -281,7 +281,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[11]" type="UMLGeneralizationView" guid="0qqhdj17E0q+IGKwOXsF/gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">828,655;718,665</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">768,682;718,678</XPD:ATTR>
 <XPD:REF name="Model">CsFoZVsZy06u5p/GF3mrJQAA</XPD:REF>
 <XPD:REF name="Head">sSZQPabo/UKHyC7517MwwgAA</XPD:REF>
 <XPD:REF name="Tail">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
@@ -409,7 +409,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[15]" type="UMLAssociationView" guid="VD0QZrNTjk2/hUiVN8gkRAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">908,536;893,616</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">898,536;843,652</XPD:ATTR>
 <XPD:REF name="Model">T4R6rv/plkOJXAMeopwVeAAA</XPD:REF>
 <XPD:REF name="Head">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
 <XPD:REF name="Tail">xgE3dD8G/U6JL+apTXYdTAAA</XPD:REF>
@@ -1039,7 +1039,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[37]" type="UMLNoteView" guid="chcA0NPJfE++NavCwK1JyQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">672</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">676</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">344</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">339</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">83</XPD:ATTR>
@@ -1053,7 +1053,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[38]" type="UMLNoteLinkView" guid="vSh74BL4OECtfPJbGXg64wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">691,233;801,344</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">691,233;803,344</XPD:ATTR>
 <XPD:REF name="Head">chcA0NPJfE++NavCwK1JyQAA</XPD:REF>
 <XPD:REF name="Tail">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
 </XPD:OBJ>
