@@ -290,29 +290,75 @@ class DBProcessor():
         """
         self.notify_viewers()
 
-    def link_parent (self, son, parent):
+    def link_parent (self, sonid, parentid):
         """
 
         """
+        son = self.get_shit_from_db(sonid, AbstractNode)
+        parent= self.get_shit_from_db(parentid, AbstractNode)
+
+        parent._children.append(son._id)
+        parent._children = list(set(parent._children)) #на тот случай, если уже была такая запись
+
+        son._parents.append(parent._id)
+        son._parents = list(set(son._parents)) #на тот случай, если уже была такая запись
+
+        self.insert_object_to_db(son,sonid)
+        self.insert_object_to_db(parent,parentid)
+
         self.renew_current_forest()
 
-    def unlink_parent (self, son, parent):
+    def unlink_parent (self, sonid, parentid):
         """
+        +
+        mylist = 3, 2, 2, 1
+        mylist = list(set(mylist))
+        """
+        son = self.get_shit_from_db(sonid, AbstractNode)
+        parent= self.get_shit_from_db(parentid, AbstractNode)
 
-        """
+        son._parents.remove(parent._id)
+        parent._children.remove(son._id)
 
         self.renew_current_forest()
+
+        self.insert_object_to_db(son,sonid)
+        self.insert_object_to_db(parent,parentid)
+
+
+    def templ_link(self, high, low, highlst, lowlst):
+        """
+        шаблон для создания связи в двусвязном списке
+        """
+        son = self.get_shit_from_db(sonid, AbstractNode)
+        parent= self.get_shit_from_db(parentid, AbstractNode)
+
+        parent._children.append(son._id)
+        parent._children = list(set(parent._children)) #на тот случай, если уже была такая запись
+
+        son._parents.append(parent._id)
+        son._parents = list(set(son._parents)) #на тот случай, если уже была такая запись
+
+        self.insert_object_to_db(son,sonid)
+        self.insert_object_to_db(parent,parentid)
+
+        self.renew_current_forest()
+
 
     def link_prev (self, prev, next):
         """
-
+            +
         """
+
+
         self.renew_current_forest()
 
     def unlink_prev (self, prev, next):
         """
-
+            +
         """
+
+
         self.renew_current_forest()
 
     def add_item_to_buy (self, id_case, item, id_item=None):
