@@ -37,7 +37,7 @@ class AbstractNode ():
             self._prev = []
             self._next = []
             self.__buy = []
-            self.__deadline = datetime.today()
+            self.__deadline = datetime.datetime.today()
             self._season = ((6,1),(8,31)) # сезон, месяц-дата, месяц-дата
             self.__made = False
             self._tags = ''
@@ -160,20 +160,20 @@ class DBProcessor():
 
         con = sqlite3.connect(self.filename)
         cur = con.cursor()
-        cur.execute("""CREATE TABLE IF NOT EXISTS cases (id INTEGER PRIMARY KEY,
-                                                        self.parents = TEXT
-                                                        self.children = TEXT
-                                                        self.prev = TEXT
-                                                        self.next = TEXT
-                                                        self._buy = TEXT
-                                                        self.deadline = TEXT
-                                                        self.season = TEXT
-                                                        self._made = INTEGER
-                                                        self.tags = TEXT
-                                                        self.text = TEXT
-                                                        self.shortText = TEXT
-                                                        self.urgency = INTEGER
-                                                        self.significance = INTEGER
+        cur.execute("""CREATE TABLE IF NOT EXISTS cases (_id INTEGER PRIMARY KEY,
+                                                        _parents = TEXT
+                                                        _children = TEXT
+                                                        _prev = TEXT
+                                                        _next = TEXT
+                                                        __buy = TEXT
+                                                        __deadline = TEXT
+                                                        _season = TEXT
+                                                        __made = INTEGER
+                                                        _tags = TEXT
+                                                        _text = TEXT
+                                                        _shortText = TEXT
+                                                        __urgency = INTEGER
+                                                        __significance = INTEGER
                                                         )""")
         con.commit()
 
@@ -187,8 +187,6 @@ class DBProcessor():
         """
         for viewer in self.viewers:
                 viewer.notify (self)
-
-
 
     def load_forest (self, pars=None):
         """
@@ -208,24 +206,23 @@ class DBProcessor():
 
         self.notify_viewers()
 
-
-    def load_subtree (self, id):
+    def load_subtree (self, _id):
         """
         +
         Получает поддерево из базы, обновляя им текущий лес
         """
-        def get_subtr(self, id):
-            cur_n = self.get_shit_from_db(id, AbstractNode)
-            self.current_forest[id] = cur_n
+        def get_subtr(self, _id):
+            cur_n = self.get_shit_from_db(_id, AbstractNode)
+            self.current_forest[_id] = cur_n
             for ch in cur_n._children:
                 get_subtr(self, ch)
 
         self.current_forest.clear()
-        get_subtr(self, id)
+        get_subtr(self, _id)
 
         self.notify_viewers()
 
-    def get_shit_from_db (self, id, type, table=None):
+    def get_shit_from_db (self, _id, _type, table=None):
         """
         +
         Возвращает хоть что из базы под айдишником
@@ -235,10 +232,10 @@ class DBProcessor():
         cur = con.cursor()
 
 
-        tbl = table if table else {AbstractNode:'cases', ItemToBuy:'items_to_buy', Supplier:'suppliers'}[type]
+        tbl = table if table else {AbstractNode:'cases', ItemToBuy:'items_to_buy', Supplier:'suppliers'}[_type]
 
 
-        cur.execute('SELECT * FROM {0} where id = `{0}`;'.format(tbl, id))
+        cur.execute('SELECT * FROM {0} where id = `{0}`;'.format(tbl, _id))
 
         # впихивание натащенного в casesdict
 
@@ -273,13 +270,51 @@ class DBProcessor():
 
 
 
-    def insert_object_to_db (self, node,id):
+    def insert_object_to_db (self, object, table, _id=None):
         """
         Вставляет объект в базу данных, возможно, именяя его.
         если изменяет, тогда обновляет тех, кто с ним связан
         если вставляет - тоже
         обновляет автоматом текущее дерево, есл оно содержит вставляемый объект ( в первой версии - безусловно)
         """
+
+        # case 1: no such object yet
+
+        con = sqlite3.connect(self.filename_cases)
+        cur = con.cursor()
+
+        ('id',
+        'parents',
+        'children',
+        'prev',
+        'next',
+        _buy,
+        deadline,
+        season,
+        _made,
+        tags,
+        text,
+        short,
+        urgency,
+        significance)
+        
+        
+
+        
+
+
+        if _id is None:
+
+
+
+            #query = (INSERT INTO {0} )
+
+            cur.execute('INSERT INTO users (id, firstName, secondName) VALUES(NULL, "Guido", "van Rossum")')
+            con.commit()
+            print (cur.lastrowid)
+
+
+
         self.notify_viewers()
 
 
