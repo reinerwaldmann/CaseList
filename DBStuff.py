@@ -31,7 +31,7 @@ class AbstractNode ():
     """
     def __init__(self, row = None):
         if row is None:
-            self._id = 0
+            self._id = None
             self._parents = []
             self._children = []
             self._prev = []
@@ -77,17 +77,16 @@ class AbstractNode ():
 
     def __str__(self):
         rs = ''
-        rs += str(self.id)+ '\t'+ self.shortText + '\n'
-        rs += 'Дедлайн: {0} Срочнота: {1}  Сезон: {2} '.format(self.deadline, self.urgency, self.season) + '\n'
-        rs += 'Теги: {0}'.format(self.tags) + '\n'
-        rs += 'Предыдущий по алгоритму: {0} Следующий по алгоритму: {1}'.format(self.prev, self.next) + '\n'
+        rs += str(self._id)+ '\t'+ self._shortText + '\n'
+        rs += 'Дедлайн: {0} Срочнота: {1}  Сезон: {2} '.format(self.__deadline, self.__urgency, self._season) + '\n'
+        rs += 'Теги: {0}'.format(self._tags) + '\n'
+        rs += 'Предыдущий по алгоритму: {0} Следующий по алгоритму: {1}'.format(self._prev, self._next) + '\n'
 
-        if self.children:
+
             # если есть дети, то есть, это не лист
-
-            for child in sorted(self.children, lambda c: c.significance, reversed = 1):
-                ss = child.__str__().split('\n')
-                rs += '\t'.join(ss)
+        for child in self._children:
+            ss = child.__str__().split('\n')
+            rs += '\t'.join(ss)
 
         return rs
 

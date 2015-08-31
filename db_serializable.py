@@ -4,6 +4,9 @@ __author__ = 'reiner'
 import sqlite3
 
 
+class NoSuchCaseInDBError (Exception):
+    pass
+
 class db_serializable ():
     """
     Класс, сериализуемый в базу данных в явном виде,
@@ -45,16 +48,15 @@ class db_serializable ():
         if not table:
             table = cls.__name__+'s'
 
-        #excluded_attrs += ['_id']
-        #list_of_attrs = sorted([x for x in list(an.__dict__.keys()) if x not in excluded_attrs])
-
         list_of_attrs = self.get_args_list(cls, excluded_attrs)
 
         dct = {}
         for attr in list_of_attrs:
-            if type(getattr(an,attr)) is int:
+            if attr=='_id':
+                tp = 'INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL'
+            elif type(getattr(an,attr)) is int:
                 tp = 'INTEGER'
-            elif  type(getattr(an,attr)) is float:
+            elif type(getattr(an,attr)) is float:
                 tp = 'REAL'
             else:
                 tp = 'TEXT'
@@ -75,11 +77,12 @@ class db_serializable ():
         """
         con = sqlite3.connect(filename)
         cur = con.cursor()
-        funct(cur, *argc, **argv)
+        ff = funct(cur, *argc, **argv)
         con.commit()
+        return ff
 
 
-    def insert_to_db (self, cur, obj, table, excluded_attrs=[],  _id=None):
+    def insert_to_db (self, cur, obj, table, excluded_attrs=[]):
         """
         Сначала получаем из таблицы названия полей, потом
         всуем в эту таблицу то, что удаётся по этим названием достать из объекта
@@ -94,11 +97,10 @@ class db_serializable ():
         if obj._id is None:
             collist.remove('_id')
         else:
-            query = 'remove from {0} where _id={1}'.format(table,obj._id)
+            query = 'delete from {0} where _id={1}'.format(table,obj._id)
             cur.execute(query)
 
-
-        vallist = [str(obj.getattr(x)) for x in collist]
+        vallist = [str(getattr(obj,x)) for x in collist]
         vallist = ['"'+x+'"' for x in vallist  ] #всё обняли кавычками
 
         colstr = ','.join(collist)
@@ -120,17 +122,49 @@ class db_serializable ():
         #print (cur.lastrowid)
 
 
-    def get_from_db(self, cur, _id=None):
-        pass
+    def get_from_db(self, cur, _id, cls, table):
+        """
+        gets object from database per _id
+        """
+        query = 'select * from {0} where _id={1}'.format (table, _id)
+
+        cur.execute(query)
+        g = cur.fetchone()
+
+        if not g:
+            raise NoSuchCaseInDBError
+
+        ooc = cls()
+
+
+        la = self.get_column_list(cur, table)
+
+        # reconstructing object
+
+        for k,v in zip (la, g):
+            setattr(ooc, k, v)
+
+
+        return ooc
+
 
 
 def test():
     dbs = db_serializable()
     filename = 'fn.sqlite'
-    #dbs.make_any_query(filename,dbs.init_table, AbstractNode, table='cases'  )
+    dbs.make_any_query(filename,dbs.init_table, AbstractNode, table='cases'  )
     an = AbstractNode()
+    an._shortText = 'sht'
 
-    dbs.make_any_query(filename, dbs.insert_to_db, an, 'cases')
+
+
+    #dbs.make_any_query(filename, dbs.insert_to_db, an, 'cases')
+
+    print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
+
+    #print (an)
+
+
 
 
 
