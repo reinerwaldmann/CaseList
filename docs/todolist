@@ -5,3 +5,6 @@
 то ли это будет статический класс, то ли его подмешивать в интерфейс объектов
 
 ТАкже надлежит подумать про python vkontakte api
+Уже подумали вот здесь:
+https://github.com/korzhyk/VKMusic
+https://github.com/amka/VKPorter
