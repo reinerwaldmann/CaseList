@@ -1,4 +1,4 @@
-from DBStuff import AbstractNode
+from DBStuff import AbstractNode, ItemToBuy, Supplier
 
 __author__ = 'reiner'
 import sqlite3
@@ -6,6 +6,8 @@ import sqlite3
 
 class NoSuchCaseInDBError (Exception):
     pass
+
+
 
 class db_serializable ():
     """
@@ -20,32 +22,75 @@ class db_serializable ():
      alpha - пока всем функциям требуется объект, с которым оно и работает
     """
 
+
+    # Такой пример - сам класс возвращает курсор к базе данных, который можно пользовать в with
+    def __enter__(self):
+            self.con = sqlite3.connect(self.filename)
+            cur = self.con.cursor()
+            return cur
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+            self.con.commit()
+            self.con.close()
+
+    def __init__(self, filename='cases.sqlite'):
+        """
+        Класс конфигурируется именем файла и вот ещё словарём типов данных и таблиц
+        """
+        self.filename = filename
+        self.tables = {AbstractNode:'cases', ItemToBuy:'items_to_buy', Supplier:'suppliers'}
+
+        #таблицы по умолчанию
+
+
     def get_args_list(self, cls, excluded_attrs=[]):
         """
         Получает список атрибутов у объекта исключая исключаемые
         """
         an = cls () if 'class' in str(type(cls)) else cls
 
+        try:  # пытается вытянуть исключаемые из самого объекта
+            excluded_attrs += an.excluded_attrs
+        except AttributeError:  # если не удалось, ну и фиг то с ними
+            pass
+
         excluded_attrs += ['_id']
         list_of_attrs = sorted([x for x in list(an.__dict__.keys()) if x not in excluded_attrs])
         list_of_attrs = ['_id']+list_of_attrs
+        #  вся эта ересь с айди только по сути для того, чтоб он был первый в списке, так-то у всех объектов должен быть
+
         return list_of_attrs
 
-    def get_column_list (self, cur,  table):
+    def get_column_list (self, table_or_cls, cur=None):
         """
         Получает список колонок в таблице
+        :param table_or_cls это таблица или класс из стандартных
+        Внимание: это единственная функция, принимающая на вход cur.
+        Ибо иначе может возникнуть ситуация двух вложенных with и cannot operate on closed database
+        (внутренний with её закроет)
         """
+        table = table_or_cls if type(table_or_cls) is str else self.tables[table_or_cls]
 
-        ti = cur.execute('PRAGMA table_info({0})'.format (table)).fetchall()
+        if cur is None:
+            with self as cur:
+                ti = cur.execute('PRAGMA table_info({0})'.format (table)).fetchall()
+        else:
+            ti = cur.execute('PRAGMA table_info({0})'.format (table)).fetchall()
+
         lss = [k[1] for k in ti]
         return lss
 
 
-
-    def get_table_init_string (self, cls, table='', excluded_attrs=[]):
+    def _get_table_init_string (self, cls, table=None, excluded_attrs=[]):
+        """
+        Возвращает строку инициализации таблицы
+        """
         an = cls ()  # у полученного объекта все нужные атрибуты
 
         if not table:
+            table = self.tables(cls)
+
+        if table == '':
             table = cls.__name__+'s'
 
         list_of_attrs = self.get_args_list(cls, excluded_attrs)
@@ -66,23 +111,31 @@ class db_serializable ():
         script_str = """CREATE TABLE IF NOT EXISTS {0} ({1})""".format(table, creation_string)
         return script_str
 
-    def init_table(self, cur, cls, table='', excluded_attrs=[]):
-        script_str = self.get_table_init_string(cls, table, excluded_attrs)
-        cur.execute (script_str)
-
-    def make_any_query (self, filename, funct, *argc, **argv):
+    def init_table(self, cls, table=None, excluded_attrs=[]):
         """
-        wrapper around any function connects to DB
-        we can make the idea much more elegant, but for now it looks like this
+        Инициализировать таблицу для записи классов
         """
-        con = sqlite3.connect(filename)
-        cur = con.cursor()
-        ff = funct(cur, *argc, **argv)
-        con.commit()
-        return ff
+        if not table:
+            table = self.tables(cls)
+
+        if table == '':
+            table = cls.__name__+'s'
+
+        with self as cur:
+            script_str = self._get_table_init_string(cls, table, excluded_attrs)
+            cur.execute (script_str)
+
+    def init_all_known_tables (self):
+        """
+        Работает только если каждый класс знает свои исключаемые атрибуты
+        инициализирует таблицы под все известные классы
+        """
+        for tp, tbl in self.tables:
+            self.init_table(tp)
 
 
-    def insert_to_db (self, cur, obj, table, excluded_attrs=[]):
+
+    def insert_to_db (self, obj, table=None):
         """
         Сначала получаем из таблицы названия полей, потом
         всуем в эту таблицу то, что удаётся по этим названием достать из объекта
@@ -92,75 +145,113 @@ class db_serializable ():
         Во-вторых, предполагается, что есть такой атрибут у объекта obj
         Также, так как это generic функция, не рассматривается аспект поддержания связей дети-родители и prev-next
 
+        В таблицу записываются только те поля объекта, которые имеются в таблице. Если какого-то нет - будет исключение
+
+        :param obj - записываемый объект
+        :param table - таблица, может доставаться из словаря известных
+
         """
-        collist = self.get_column_list(cur, table)
-        if obj._id is None:
-            collist.remove('_id')
-        else:
-            query = 'delete from {0} where _id={1}'.format(table,obj._id)
-            cur.execute(query)
 
-        vallist = [str(getattr(obj,x)) for x in collist]
-        vallist = ['"'+x+'"' for x in vallist  ] #всё обняли кавычками
+        if not table:
+            table = self.tables[type (obj)]
 
-        colstr = ','.join(collist)
-        valstr = ','.join(vallist)
+        if table == '':
+            table = type (obj).__name__+'s'
 
 
-        scrstr = 'INSERT INTO {0} ({1}) VALUES ({2})'.format (table,colstr,valstr)
-        cur.execute(scrstr)
+        with self as cur:
 
-        if obj._id is None:
-            obj._id = cur.lastrowid
-        return obj
+            collist = self.get_column_list(cur, table)
+            if obj._id is None:
+                collist.remove('_id')
+            else:
+                query = 'delete from {0} where _id={1}'.format(table,obj._id)
+                cur.execute(query)
+
+            vallist = [str(getattr(obj,x)) for x in collist]
+            vallist = ['"'+x+'"' for x in vallist  ] #всё обняли кавычками
+
+            colstr = ','.join(collist)
+            valstr = ','.join(vallist)
 
 
+            scrstr = 'INSERT INTO {0} ({1}) VALUES ({2})'.format (table,colstr,valstr)
+            cur.execute(scrstr)
+
+            if obj._id is None:
+                obj._id = cur.lastrowid
+            return obj
 
 
-        # cur.execute('INSERT INTO users (id, firstName, secondName) VALUES(NULL, "Guido", "van Rossum")')
-        # con.commit()
-        #print (cur.lastrowid)
-
-
-    def get_from_db(self, cur, _id, cls, table):
+    def get_from_db(self, _id, cls, table=None):
         """
         gets object from database per _id
+        :param table - таблица, может доставаться из словаря известных
+        :param _id - идентификатор объекта
+
+        При распаковке объекта из таблицы в объект вписываются все атрибуты из колонок таблицы
+        то есть, даже те, которых у него не было изначально
+
         """
-        query = 'select * from {0} where _id={1}'.format (table, _id)
+        if not table:
+            table = self.tables[cls]
 
-        cur.execute(query)
-        g = cur.fetchone()
+        if table == '':
+            table = cls.__name__+'s'
 
-        if not g:
-            raise NoSuchCaseInDBError
+        with self as cur:
+            query = 'select * from {0} where _id={1}'.format (table, _id)
 
-        ooc = cls()
+            cur.execute(query)
+            g = cur.fetchone()
+
+            if not g:
+                raise NoSuchCaseInDBError
+
+            ooc = cls()
+
+            la = self.get_column_list(table, cur)
+
+            # reconstructing object
 
 
-        la = self.get_column_list(cur, table)
-
-        # reconstructing object
-
-        for k,v in zip (la, g):
-            setattr(ooc, k, v)
+            for k,v in zip (la, g):
+                setattr(ooc, k, v)
 
 
-        return ooc
+            return ooc
 
 
 
 def test():
-    dbs = db_serializable()
+
     filename = 'fn.sqlite'
-    dbs.make_any_query(filename,dbs.init_table, AbstractNode, table='cases'  )
+
+    dbs = db_serializable(filename)
+
+
     an = AbstractNode()
-    an._shortText = 'sht'
+    an._shortText = 'Trololo, hey all'
 
 
 
     #dbs.make_any_query(filename, dbs.insert_to_db, an, 'cases')
 
-    print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
+    #print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
+
+
+    for i in range (10):
+        try:
+            print ( dbs.get_from_db(i, AbstractNode, table='cases'))
+        except NoSuchCaseInDBError:
+            pass
+
+
+
+
+
+
+
 
     #print (an)
 
