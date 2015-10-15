@@ -38,7 +38,7 @@ class AbstractNode ():
             self._next = []
             self.__buy = []
             self.__deadline = datetime.datetime.today()
-            self._season = ((6,1),(8,31)) # сезон, месяц-дата, месяц-дата
+            self._season = [6,1,8,31] # сезон, месяц-дата, месяц-дата
             self.__made = False
             self._tags = ''
             self._text = ''

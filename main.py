@@ -1,5 +1,6 @@
 from pathlib import _Selector
 
+
 __author__ = 'vasilev_is'
 import  sqlite3
 import datetime
@@ -105,12 +106,6 @@ class Group(AbstractNode):
             if not child.made:
                 return False
         return True
-
-
-
-
-
-
 
 
 def initFile ():

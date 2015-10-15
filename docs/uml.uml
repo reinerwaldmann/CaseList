@@ -58,8 +58,8 @@
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">28</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">12</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">194</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">316</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">204</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">382</XPD:ATTR>
 <XPD:REF name="Model">NUtlmk0VY0O/yAc9ddW3cwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="XTe98Cm1FE2tlIefvmie+gAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="bPkngYQx3EKlVQ/hRvDOrQAA">
@@ -89,8 +89,8 @@
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">32</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">380</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">192</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">303</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">240</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">366</XPD:ATTR>
 <XPD:REF name="Model">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="K30AlEr0eECdBL5K40fcFAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="o5XLb/MndEKwQ0OnLEdnlQAA">
@@ -120,7 +120,7 @@
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">512</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">732</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">306</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">380</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">197</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">get_subtree(id=None)
 получает поддерево,
@@ -137,7 +137,7 @@ renew_current_forest(pars=None)
 <XPD:OBJ name="OwnedViews[3]" type="UMLNoteLinkView" guid="yOPzIt/+YkuoH3JM3HTntgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">223,584;512,745</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">271,620;512,738</XPD:ATTR>
 <XPD:REF name="Head">ZlWmJhBS2EqQG8yIHRtORAAA</XPD:REF>
 <XPD:REF name="Tail">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 </XPD:OBJ>
@@ -177,8 +177,8 @@ renew_current_forest(pars=None)
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1032</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">592</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">265</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">83</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">334</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">98</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">view_current_forest(forest)
 принимает лес, отображает его в консольке
 лес может и из дерева состоять.
@@ -189,7 +189,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[6]" type="UMLNoteLinkView" guid="nUCJx5A8JEqcAmeWcnqHhAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">887,677;1032,654</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">887,679;1032,661</XPD:ATTR>
 <XPD:REF name="Head">tIdvIY5HQkCYyGBYVorGBAAA</XPD:REF>
 <XPD:REF name="Tail">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
 </XPD:OBJ>
@@ -198,8 +198,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">860</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">468</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">110</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">69</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">135</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">78</XPD:ATTR>
 <XPD:REF name="Model">8rOMt7L6Pkynhp42OnxijgAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="98p/yk2DKkmtIBCbpoI8YgAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="sb9onWiwI0aJR3W+Y2y9jQAA">
@@ -229,8 +229,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">24</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">948</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">301</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">117</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">348</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">134</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">remove_object_from_db(id)
 организует безопасное удаление - 
 проверяет, нет ли среди объектов тех, 
@@ -243,7 +243,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[9]" type="UMLNoteLinkView" guid="gnZYTNSICEiUvXZXvCiOUAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">142,682;168,948</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">170,745;190,948</XPD:ATTR>
 <XPD:REF name="Head">uOYSwp8TWk2A+Wh7amAWmwAA</XPD:REF>
 <XPD:REF name="Tail">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 </XPD:OBJ>
@@ -252,7 +252,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">564</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">632</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">155</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">188</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
 <XPD:REF name="Model">zQXhcErct0OvkNjzO7Yz3gAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="N8GbjYesVUexa1rK9B0uHwAA">
@@ -281,7 +281,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[11]" type="UMLGeneralizationView" guid="0qqhdj17E0q+IGKwOXsF/gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">768,682;718,678</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">768,681;751,680</XPD:ATTR>
 <XPD:REF name="Model">CsFoZVsZy06u5p/GF3mrJQAA</XPD:REF>
 <XPD:REF name="Head">sSZQPabo/UKHyC7517MwwgAA</XPD:REF>
 <XPD:REF name="Tail">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
@@ -307,7 +307,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[12]" type="UMLAssociationView" guid="WMO+8T2v/kWA/jILwj7W0AAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">223,557;564,651</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">271,588;564,652</XPD:ATTR>
 <XPD:REF name="Model">Mk05R0bwiUeG9Tz2Q7h/OwAA</XPD:REF>
 <XPD:REF name="Head">sSZQPabo/UKHyC7517MwwgAA</XPD:REF>
 <XPD:REF name="Tail">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
@@ -393,8 +393,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1172</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">516</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">186</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">38</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">230</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">44</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">parse_string(instr)
 возвращает команду (Command)
 </XPD:ATTR>
@@ -402,14 +402,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[14]" type="UMLNoteLinkView" guid="AZ0nERhqQEKGNtL4HaJA3QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1172,526;969,507</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1172,527;994,512</XPD:ATTR>
 <XPD:REF name="Head">xgE3dD8G/U6JL+apTXYdTAAA</XPD:REF>
 <XPD:REF name="Tail">YujSjiX0O02auABlr8MhvwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[15]" type="UMLAssociationView" guid="VD0QZrNTjk2/hUiVN8gkRAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">898,536;843,652</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">905,545;846,652</XPD:ATTR>
 <XPD:REF name="Model">T4R6rv/plkOJXAMeopwVeAAA</XPD:REF>
 <XPD:REF name="Head">nTucevqTQESPHhUGCgI0xAAA</XPD:REF>
 <XPD:REF name="Tail">xgE3dD8G/U6JL+apTXYdTAAA</XPD:REF>
@@ -493,7 +493,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[16]" type="UMLAssociationView" guid="xhUOjua5aEKNLMzTwMTXUAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">860,504;223,527</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">860,511;271,553</XPD:ATTR>
 <XPD:REF name="Model">hX+OuLr/5U+vVY4cVp+iSQAA</XPD:REF>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">xgE3dD8G/U6JL+apTXYdTAAA</XPD:REF>
@@ -579,8 +579,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">424</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">952</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">422</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">218</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">518</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">260</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">любое изменение объектов, такое как 
 вызываемое методами insert_object_to_db(id) 
 с заданным идентификатором приведёт к обновлению текущих
@@ -600,7 +600,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[18]" type="UMLNoteLinkView" guid="sx4fTcbISkaZDLC2LjC+9QAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">530,952;223,631</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">550,952;271,679</XPD:ATTR>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">Mddw2eH2U06Al3McENDmFQAA</XPD:REF>
 </XPD:OBJ>
@@ -610,7 +610,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Left" type="integer">924</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">80</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">94</XPD:ATTR>
 <XPD:REF name="Model">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="h88yWquBRU2EpLMDW0BX9AAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="ym5twtzfVEidDAKsW8s0VgAA">
@@ -640,8 +640,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">620</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">20</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">117</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">69</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">144</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">78</XPD:ATTR>
 <XPD:REF name="Model">N6NwU3O0z06AMhR7UhayFQAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="3WyAE09g0k2cTdxB38XMygAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="D5szoBdcI0S0DUoEae0BNAAA">
@@ -671,8 +671,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">792</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">152</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">198</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">246</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">94</XPD:ATTR>
 <XPD:REF name="Model">4bclwv2ps0mxr1eZ/V6g1wAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="rFXRMNEJe02QSvd0ktpfswAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="h7CFN4qCB0+ICcX8eiX2BgAA">
@@ -702,8 +702,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1020</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">268</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">138</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">69</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">170</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">78</XPD:ATTR>
 <XPD:REF name="Model">hodOyLQcAEeOHPTAQU5AowAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="6wIl9XymeEasxycAZZupHgAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="FV9SKA284EGwPn7501ZUkgAA">
@@ -733,8 +733,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1296</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">168</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">148</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">69</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">183</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">78</XPD:ATTR>
 <XPD:REF name="Model">Q2gHELfSekiudFbJNz8lwAAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="OK6SbbZ/30mw4AlPXV/iigAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="oh+KUM47C0SfRxPnEFTXxAAA">
@@ -762,7 +762,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[24]" type="UMLGeneralizationView" guid="5kcVXnzMskyj8FC5BtgJLwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">736,55;924,59</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">763,60;924,65</XPD:ATTR>
 <XPD:REF name="Model">DvoXPkauN0WUUTgJMpbhzQAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">bkinjr5qkEK6vYX/rowFIwAA</XPD:REF>
@@ -788,7 +788,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[25]" type="UMLGeneralizationView" guid="iUkpHeIAhkig3qH6wZFUhQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">912,152;940,101</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">931,152;946,113</XPD:ATTR>
 <XPD:REF name="Model">8zuMgzpbw0GeRiOb1nT0HwAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">gtRVa2uOoEyOyep/gHXBaQAA</XPD:REF>
@@ -814,7 +814,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[26]" type="UMLGeneralizationView" guid="yYzFnVGDQkWnZHKCntdhWwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1070,268;984,101</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1082,268;991,113</XPD:ATTR>
 <XPD:REF name="Model">avfjTO47sEaZc/pmuS2jkwAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">C1eo2Se96Um3ZbOciAsCfwAA</XPD:REF>
@@ -840,7 +840,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[27]" type="UMLGeneralizationView" guid="aoyxcrAFp0ifwZNMstZ0ngAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1296,176;1003,74</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1296,176;1003,79</XPD:ATTR>
 <XPD:REF name="Model">zdX17RDqUkSPivoFWbIwugAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">bt1jmo6j40qL3RcpNIOwwgAA</XPD:REF>
@@ -868,8 +868,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1128</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">28</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">388</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">83</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">480</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">98</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">FIXME пока непонятно, как команда будет получать
 свой контекст исполнения
 1 вариант - в качестве параметров функции execute)
@@ -882,8 +882,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">384</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">40</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">161</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">43</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">199</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">46</XPD:ATTR>
 <XPD:REF name="Model">QJFBkHsTtEKAESmi71J0gwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="Eh5OrTxizkWJN7mE0HHbtQAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="p+nQEBioE0eE7fLnoMqfNAAA">
@@ -911,7 +911,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[30]" type="UMLGeneralizationView" guid="5SDtsFghrEOcJej5dH1aYwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">544,58;620,56</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">582,60;620,59</XPD:ATTR>
 <XPD:REF name="Model">KjVE8Ywc5kuc4AFOm7ppiwAA</XPD:REF>
 <XPD:REF name="Head">bkinjr5qkEK6vYX/rowFIwAA</XPD:REF>
 <XPD:REF name="Tail">W95HeKJNNE6y1FL8Q97+QwAA</XPD:REF>
@@ -939,8 +939,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">1268</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">288</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">277</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">177</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">325</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">188</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">Когда пользователь посылает команду (будь 
 то нажатие на кнопочку, или ввод команды)
 конструктором формируется команда 
@@ -956,7 +956,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[32]" type="UMLNoteLinkView" guid="QZ+0tFTHmk+6JE5B+KVpzQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1283,288;1003,88</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1292,288;1003,93</XPD:ATTR>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">xugSR8xgBUW/dDnmcs2v4AAA</XPD:REF>
 </XPD:OBJ>
@@ -965,7 +965,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">264</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">116</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">233</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">246</XPD:ATTR>
 <XPD:ATTR name="Height" type="integer">101</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">Выводит интерактивный диалог, в 
 данном случае консольный 
@@ -975,17 +975,17 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[34]" type="UMLNoteLinkView" guid="9YlwC34n80qatEVcQKP2iAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">447,82;420,116</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">462,85;433,116</XPD:ATTR>
 <XPD:REF name="Head">I9GyFCWr1EeHS3JC5B2cWAAA</XPD:REF>
 <XPD:REF name="Tail">W95HeKJNNE6y1FL8Q97+QwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[35]" type="UMLClassView" guid="N/eaG0Kwk0i6CwM2Zpj08wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">552</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">528</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">152</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">198</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">82</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">246</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">94</XPD:ATTR>
 <XPD:REF name="Model">9/ARESiPIU2LfJdxn6GxPgAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="XS4zusxVVU+foZGgi21D1QAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="UVe9GggO10eScdPvx0LsZAAA">
@@ -1013,7 +1013,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[36]" type="UMLGeneralizationView" guid="yFaY1cayxki+QmjWNX6LtQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">745,152;924,76</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">759,152;924,82</XPD:ATTR>
 <XPD:REF name="Model">+p/xP1cC+kOUSOBEJGbWGAAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
@@ -1041,8 +1041,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">676</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">344</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">339</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">83</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">423</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">98</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">Выводит интерактивный диалог
 изменения ноды. Потом изменяет фиксирует изменения 
 в базе данных.
@@ -1053,14 +1053,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[38]" type="UMLNoteLinkView" guid="vSh74BL4OECtfPJbGXg64wAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">691,233;803,344</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">707,245;828,344</XPD:ATTR>
 <XPD:REF name="Head">chcA0NPJfE++NavCwK1JyQAA</XPD:REF>
 <XPD:REF name="Tail">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedViews[39]" type="UMLAssociationView" guid="CYat90DC0Uqf1otdmu8lKQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">587,233;223,469</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">586,245;271,475</XPD:ATTR>
 <XPD:REF name="Model">vOmx7M67gEWTMiui98E65gAA</XPD:REF>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
@@ -1144,7 +1144,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[40]" type="UMLAssociationView" guid="pb6POoWlUkiRsgOYMcWyjQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">798,233;223,488</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">815,245;271,505</XPD:ATTR>
 <XPD:REF name="Model">i3dnAQ6tQkWc+jcQDHmpRwAA</XPD:REF>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">gtRVa2uOoEyOyep/gHXBaQAA</XPD:REF>
@@ -1228,7 +1228,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[41]" type="UMLAssociationView" guid="X8cJMedQUkOvU6IQne0VegAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1020,294;800,268;223,493</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1020,296;800,268;271,508</XPD:ATTR>
 <XPD:REF name="Model">ixYsJfPiC0eE7nTakDwZQgAA</XPD:REF>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">C1eo2Se96Um3ZbOciAsCfwAA</XPD:REF>
@@ -1312,7 +1312,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[42]" type="UMLAssociationView" guid="6GA9pNLxA06DfqqlZ1SlVgAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1296,213;804,288;223,497</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1296,219;804,288;271,512</XPD:ATTR>
 <XPD:REF name="Model">PEUW32R2O0mdinARm6BcMwAA</XPD:REF>
 <XPD:REF name="Head">2p9HVvSbfEilQL2jVY0fyAAA</XPD:REF>
 <XPD:REF name="Tail">bt1jmo6j40qL3RcpNIOwwgAA</XPD:REF>
@@ -1396,7 +1396,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[43]" type="UMLAssociationView" guid="RC7vF+8E2k+kh8bE38hFpQAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">964,468;1220,295;1003,97</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">980,468;1220,295;1003,102</XPD:ATTR>
 <XPD:REF name="Model">qJDT36eiGEOwrAKTZ12fFQAA</XPD:REF>
 <XPD:REF name="Head">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
 <XPD:REF name="Tail">xgE3dD8G/U6JL+apTXYdTAAA</XPD:REF>
@@ -1482,8 +1482,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
 <XPD:ATTR name="Left" type="integer">964</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">744</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">354</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">121</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">452</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">142</XPD:ATTR>
 <XPD:REF name="Model">BAfXJu3f/Uuj42IUvBPXxwAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="HHD+YaCvokyCrOx53G2UiQAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="Tw5Dfn59DEyo5N1d2liH8gAA">
@@ -1514,7 +1514,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Left" type="integer">1368</XPD:ATTR>
 <XPD:ATTR name="Top" type="integer">876</XPD:ATTR>
 <XPD:ATTR name="Width" type="integer">86</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">147</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">174</XPD:ATTR>
 <XPD:REF name="Model">lpdXJD5FsEWAVc6W2OOAVAAA</XPD:REF>
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="7WD8KlFaqESORzOhJQOixQAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="e8EsvJjaE0OeRlKP8OnPVwAA">
@@ -1542,7 +1542,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[46]" type="UMLAssociationView" guid="drzz5xPsy0CSjSzvEDTHVwAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">221,230;1044,744</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">231,261;1068,744</XPD:ATTR>
 <XPD:REF name="Model">X1JU1/rzj0ub3ybw/BuIdQAA</XPD:REF>
 <XPD:REF name="Head">5xB/SKnZC0CoUO0hkYNa9QAA</XPD:REF>
 <XPD:REF name="Tail">zJwvLVdajk68Tw0+hGj4VgAA</XPD:REF>
@@ -1626,7 +1626,7 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[47]" type="UMLAssociationView" guid="PZRTZEa81EyUdGNNjdgOcAAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Points" type="Points">1259,864;1312,891;1368,924</XPD:ATTR>
+<XPD:ATTR name="Points" type="Points">1302,885;1312,891;1368,932</XPD:ATTR>
 <XPD:REF name="Model">IlFg0ULmFE+ofRZj6PGUuwAA</XPD:REF>
 <XPD:REF name="Head">qkrNVwpmRU+5LCITU8doEwAA</XPD:REF>
 <XPD:REF name="Tail">5xB/SKnZC0CoUO0hkYNa9QAA</XPD:REF>
@@ -1710,10 +1710,10 @@ notified() - принимает сообщение от DBProcessor
 <XPD:OBJ name="OwnedViews[48]" type="UMLNoteView" guid="r1T9kG3k2ke7DhJ9w+W/1gAA">
 <XPD:ATTR name="LineColor" type="string">clMaroon</XPD:ATTR>
 <XPD:ATTR name="FillColor" type="string">$00B9FFFF</XPD:ATTR>
-<XPD:ATTR name="Left" type="integer">940</XPD:ATTR>
-<XPD:ATTR name="Top" type="integer">996</XPD:ATTR>
-<XPD:ATTR name="Width" type="integer">358</XPD:ATTR>
-<XPD:ATTR name="Height" type="integer">53</XPD:ATTR>
+<XPD:ATTR name="Left" type="integer">932</XPD:ATTR>
+<XPD:ATTR name="Top" type="integer">928</XPD:ATTR>
+<XPD:ATTR name="Width" type="integer">445</XPD:ATTR>
+<XPD:ATTR name="Height" type="integer">62</XPD:ATTR>
 <XPD:ATTR name="Text" type="string">Написание интерфейса к этому чуду - отдельная большая задача
 
 нечто в стиле 1C
@@ -2330,9 +2330,6 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">get_urgency</XPD:ATTR>
 <XPD:REF name="Owner">NUtlmk0VY0O/yAc9ddW3cwAA</XPD:REF>
 </XPD:OBJ>
-<XPD:ATTR name="#TypedParameters" type="integer">2</XPD:ATTR>
-<XPD:REF name="TypedParameters[0]" pathname="Parameter1">DTfwFoZRQ0SLaAM4TyloJgAA</XPD:REF>
-<XPD:REF name="TypedParameters[1]" pathname="Parameter1">LuYySaYoB06ygVar1lzXBgAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">3</XPD:ATTR>
 <XPD:REF name="Associations[0]">cBCVBYsq3U6DUxsL5YBHMQAA</XPD:REF>
 <XPD:REF name="Associations[1]">uq2UcuCCj0W4ti6KgcK8YAAA</XPD:REF>
@@ -2883,8 +2880,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">XtgzCdZcdkK3NQoDWHhjRQAA</XPD:REF>
-<XPD:REF name="Views[1]">14+mkfc9v0S79IcoXWZY1gAA</XPD:REF>
-<XPD:REF name="Views[2]">bF6GqhOb4kiYAyBWTGtvigAA</XPD:REF>
+<XPD:REF name="Views[1]">bF6GqhOb4kiYAyBWTGtvigAA</XPD:REF>
+<XPD:REF name="Views[2]">14+mkfc9v0S79IcoXWZY1gAA</XPD:REF>
 <XPD:REF name="Views[3]">rHwZB3vs80GM3uPF/YS94QAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="pHoKGb5ev0+OdMw7QvyqcwAA">
@@ -2892,8 +2889,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">zQXhcErct0OvkNjzO7Yz3gAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">Z4634a9gVk6dMbr6IqSvggAA</XPD:REF>
-<XPD:REF name="Views[1]">WP4XVjgsLUypA8ZioBfJPQAA</XPD:REF>
-<XPD:REF name="Views[2]">ZtYArwQOkU+gEvzbSf7vNQAA</XPD:REF>
+<XPD:REF name="Views[1]">ZtYArwQOkU+gEvzbSf7vNQAA</XPD:REF>
+<XPD:REF name="Views[2]">WP4XVjgsLUypA8ZioBfJPQAA</XPD:REF>
 <XPD:REF name="Views[3]">CHtXG/+XX0aZUZqaMIhjOgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -2901,14 +2898,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">Command</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">sPG7jGic4ECmCxQL3FwL0AAA</XPD:REF>
-<XPD:REF name="Views[1]">DcQTmT9RM0GjmqNpi5tqvgAA</XPD:REF>
-<XPD:REF name="Views[2]">iSeOMMZvYkO7XPuW//VR5QAA</XPD:REF>
-<XPD:REF name="Views[3]">KokaY4/BYEqReuMQQEsG9QAA</XPD:REF>
-<XPD:REF name="Views[4]">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
-<XPD:REF name="Views[5]">2GndzOABaEiA0JGdeCm/SQAA</XPD:REF>
-<XPD:REF name="Views[6]">7eCMBXg44UOwPWPUZ1xpWgAA</XPD:REF>
-<XPD:REF name="Views[7]">sjMyAY+Kf0+0Z8ST6BNNDAAA</XPD:REF>
+<XPD:REF name="Views[0]">lWwmNOkZWUG70zRrjZA8ywAA</XPD:REF>
+<XPD:REF name="Views[1]">2GndzOABaEiA0JGdeCm/SQAA</XPD:REF>
+<XPD:REF name="Views[2]">7eCMBXg44UOwPWPUZ1xpWgAA</XPD:REF>
+<XPD:REF name="Views[3]">sjMyAY+Kf0+0Z8ST6BNNDAAA</XPD:REF>
+<XPD:REF name="Views[4]">sPG7jGic4ECmCxQL3FwL0AAA</XPD:REF>
+<XPD:REF name="Views[5]">DcQTmT9RM0GjmqNpi5tqvgAA</XPD:REF>
+<XPD:REF name="Views[6]">iSeOMMZvYkO7XPuW//VR5QAA</XPD:REF>
+<XPD:REF name="Views[7]">KokaY4/BYEqReuMQQEsG9QAA</XPD:REF>
 <XPD:ATTR name="#Specializations" type="integer">5</XPD:ATTR>
 <XPD:REF name="Specializations[0]">DvoXPkauN0WUUTgJMpbhzQAA</XPD:REF>
 <XPD:REF name="Specializations[1]">8zuMgzpbw0GeRiOb1nT0HwAA</XPD:REF>
@@ -2935,14 +2932,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">AddNodeCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">TBDzSJkIMUKCAi9oMJYIYAAA</XPD:REF>
-<XPD:REF name="Views[1]">c9yQvoiu+06lAD/FczvphgAA</XPD:REF>
-<XPD:REF name="Views[2]">L+MaSO9fXE+qjVYlOsaAbgAA</XPD:REF>
-<XPD:REF name="Views[3]">R98MhDgD8kOTAob3kWbZ8AAA</XPD:REF>
-<XPD:REF name="Views[4]">bkinjr5qkEK6vYX/rowFIwAA</XPD:REF>
-<XPD:REF name="Views[5]">EwqBuCn/KE+CDa1rq6777AAA</XPD:REF>
-<XPD:REF name="Views[6]">sEgTHreGlkmyx+foYWdtgQAA</XPD:REF>
-<XPD:REF name="Views[7]">ZM8HgZZKyUO+D/eaEE1OdQAA</XPD:REF>
+<XPD:REF name="Views[0]">bkinjr5qkEK6vYX/rowFIwAA</XPD:REF>
+<XPD:REF name="Views[1]">EwqBuCn/KE+CDa1rq6777AAA</XPD:REF>
+<XPD:REF name="Views[2]">sEgTHreGlkmyx+foYWdtgQAA</XPD:REF>
+<XPD:REF name="Views[3]">ZM8HgZZKyUO+D/eaEE1OdQAA</XPD:REF>
+<XPD:REF name="Views[4]">TBDzSJkIMUKCAi9oMJYIYAAA</XPD:REF>
+<XPD:REF name="Views[5]">c9yQvoiu+06lAD/FczvphgAA</XPD:REF>
+<XPD:REF name="Views[6]">L+MaSO9fXE+qjVYlOsaAbgAA</XPD:REF>
+<XPD:REF name="Views[7]">R98MhDgD8kOTAob3kWbZ8AAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">DvoXPkauN0WUUTgJMpbhzQAA</XPD:REF>
 <XPD:ATTR name="#Specializations" type="integer">1</XPD:ATTR>
@@ -2961,14 +2958,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">DeleteNodeCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">JTOlRPtfdUyO8CXHFw9xmwAA</XPD:REF>
-<XPD:REF name="Views[1]">nPFU3wtY1U+eCs+3+bTUYwAA</XPD:REF>
-<XPD:REF name="Views[2]">RHyNS00Aak+TPRib18ogMQAA</XPD:REF>
-<XPD:REF name="Views[3]">Wyo+lZllEESs0cMyJwG2xgAA</XPD:REF>
-<XPD:REF name="Views[4]">gtRVa2uOoEyOyep/gHXBaQAA</XPD:REF>
-<XPD:REF name="Views[5]">x/3PgUiw8Ue9b6lpghzYIwAA</XPD:REF>
-<XPD:REF name="Views[6]">D9uF8K4xHEy5o0ecLcO5OwAA</XPD:REF>
-<XPD:REF name="Views[7]">fuyh6U16sU++6EYPIusXRQAA</XPD:REF>
+<XPD:REF name="Views[0]">gtRVa2uOoEyOyep/gHXBaQAA</XPD:REF>
+<XPD:REF name="Views[1]">x/3PgUiw8Ue9b6lpghzYIwAA</XPD:REF>
+<XPD:REF name="Views[2]">D9uF8K4xHEy5o0ecLcO5OwAA</XPD:REF>
+<XPD:REF name="Views[3]">fuyh6U16sU++6EYPIusXRQAA</XPD:REF>
+<XPD:REF name="Views[4]">JTOlRPtfdUyO8CXHFw9xmwAA</XPD:REF>
+<XPD:REF name="Views[5]">nPFU3wtY1U+eCs+3+bTUYwAA</XPD:REF>
+<XPD:REF name="Views[6]">RHyNS00Aak+TPRib18ogMQAA</XPD:REF>
+<XPD:REF name="Views[7]">Wyo+lZllEESs0cMyJwG2xgAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">8zuMgzpbw0GeRiOb1nT0HwAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
@@ -2991,14 +2988,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">ViewSubtreeCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">jJrNp9eVR06ws7E6uZgwPAAA</XPD:REF>
-<XPD:REF name="Views[1]">zw7j7nq/OkGOmWKJOlhopwAA</XPD:REF>
-<XPD:REF name="Views[2]">ww8OkVUCLEmHP/ws0AK8gAAA</XPD:REF>
-<XPD:REF name="Views[3]">1bfPHfrZrECtOFSyNoKLjgAA</XPD:REF>
-<XPD:REF name="Views[4]">C1eo2Se96Um3ZbOciAsCfwAA</XPD:REF>
-<XPD:REF name="Views[5]">GeNQkQIx+kqVeliR08LSAgAA</XPD:REF>
-<XPD:REF name="Views[6]">cWxO19lS+EWZMHu1R2ptKgAA</XPD:REF>
-<XPD:REF name="Views[7]">RRDxRH1h9UacoyAKBgknuAAA</XPD:REF>
+<XPD:REF name="Views[0]">C1eo2Se96Um3ZbOciAsCfwAA</XPD:REF>
+<XPD:REF name="Views[1]">GeNQkQIx+kqVeliR08LSAgAA</XPD:REF>
+<XPD:REF name="Views[2]">cWxO19lS+EWZMHu1R2ptKgAA</XPD:REF>
+<XPD:REF name="Views[3]">RRDxRH1h9UacoyAKBgknuAAA</XPD:REF>
+<XPD:REF name="Views[4]">jJrNp9eVR06ws7E6uZgwPAAA</XPD:REF>
+<XPD:REF name="Views[5]">zw7j7nq/OkGOmWKJOlhopwAA</XPD:REF>
+<XPD:REF name="Views[6]">ww8OkVUCLEmHP/ws0AK8gAAA</XPD:REF>
+<XPD:REF name="Views[7]">1bfPHfrZrECtOFSyNoKLjgAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">avfjTO47sEaZc/pmuS2jkwAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
@@ -3018,14 +3015,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">ViewSubforestCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">+BYMUJqP90GXjfYLzr34gQAA</XPD:REF>
-<XPD:REF name="Views[1]">j70nz52uqECtqtuXsP0qsQAA</XPD:REF>
-<XPD:REF name="Views[2]">Pb+2gZUFskuEa1v7feb4igAA</XPD:REF>
-<XPD:REF name="Views[3]">fmO5N0PcpkqKZVq5yEY/tgAA</XPD:REF>
-<XPD:REF name="Views[4]">bt1jmo6j40qL3RcpNIOwwgAA</XPD:REF>
-<XPD:REF name="Views[5]">QOpdBPbCYUCmF84w34m+cAAA</XPD:REF>
-<XPD:REF name="Views[6]">u9Cr7NOf8U65ToO6Dh0N0wAA</XPD:REF>
-<XPD:REF name="Views[7]">tnbBdJG6t0qzqUrxHTgvpgAA</XPD:REF>
+<XPD:REF name="Views[0]">bt1jmo6j40qL3RcpNIOwwgAA</XPD:REF>
+<XPD:REF name="Views[1]">QOpdBPbCYUCmF84w34m+cAAA</XPD:REF>
+<XPD:REF name="Views[2]">u9Cr7NOf8U65ToO6Dh0N0wAA</XPD:REF>
+<XPD:REF name="Views[3]">tnbBdJG6t0qzqUrxHTgvpgAA</XPD:REF>
+<XPD:REF name="Views[4]">+BYMUJqP90GXjfYLzr34gQAA</XPD:REF>
+<XPD:REF name="Views[5]">j70nz52uqECtqtuXsP0qsQAA</XPD:REF>
+<XPD:REF name="Views[6]">Pb+2gZUFskuEa1v7feb4igAA</XPD:REF>
+<XPD:REF name="Views[7]">fmO5N0PcpkqKZVq5yEY/tgAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">zdX17RDqUkSPivoFWbIwugAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
@@ -3045,56 +3042,56 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Child">N6NwU3O0z06AMhR7UhayFQAA</XPD:REF>
 <XPD:REF name="Parent">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">S0EKnCDoAEKQCyLnr5wvcQAA</XPD:REF>
-<XPD:REF name="Views[1]">I2n+nQQ4hUWEAFBfl/tjmwAA</XPD:REF>
-<XPD:REF name="Views[2]">PIJmpvqzCEqxqPFxdaPt3QAA</XPD:REF>
-<XPD:REF name="Views[3]">GQ32j+ytGkKf2xjC+oigeAAA</XPD:REF>
-<XPD:REF name="Views[4]">5kcVXnzMskyj8FC5BtgJLwAA</XPD:REF>
-<XPD:REF name="Views[5]">SyQLt3NjtUWRpfYrd/CgkgAA</XPD:REF>
-<XPD:REF name="Views[6]">p7PD0yXCPUONFv0U4ndvkgAA</XPD:REF>
-<XPD:REF name="Views[7]">0t7me8C5c0myX+vgcz1bDQAA</XPD:REF>
+<XPD:REF name="Views[0]">5kcVXnzMskyj8FC5BtgJLwAA</XPD:REF>
+<XPD:REF name="Views[1]">SyQLt3NjtUWRpfYrd/CgkgAA</XPD:REF>
+<XPD:REF name="Views[2]">p7PD0yXCPUONFv0U4ndvkgAA</XPD:REF>
+<XPD:REF name="Views[3]">0t7me8C5c0myX+vgcz1bDQAA</XPD:REF>
+<XPD:REF name="Views[4]">S0EKnCDoAEKQCyLnr5wvcQAA</XPD:REF>
+<XPD:REF name="Views[5]">I2n+nQQ4hUWEAFBfl/tjmwAA</XPD:REF>
+<XPD:REF name="Views[6]">PIJmpvqzCEqxqPFxdaPt3QAA</XPD:REF>
+<XPD:REF name="Views[7]">GQ32j+ytGkKf2xjC+oigeAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[30]" type="UMLGeneralization" guid="8zuMgzpbw0GeRiOb1nT0HwAA">
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:REF name="Child">4bclwv2ps0mxr1eZ/V6g1wAA</XPD:REF>
 <XPD:REF name="Parent">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">sUaPQyBwNEG0m3Sey2v2gwAA</XPD:REF>
-<XPD:REF name="Views[1]">7dk04YR1S0estrPr/pLrWAAA</XPD:REF>
-<XPD:REF name="Views[2]">PdD8MEfH9kKkq8F4UN2s4AAA</XPD:REF>
-<XPD:REF name="Views[3]">ar2PYRGwP0maUJETyYBIhwAA</XPD:REF>
-<XPD:REF name="Views[4]">iUkpHeIAhkig3qH6wZFUhQAA</XPD:REF>
-<XPD:REF name="Views[5]">IcMrk14o3Eex/fNXjtfGAQAA</XPD:REF>
-<XPD:REF name="Views[6]">4f5fSwyVzkae0LhIUvVgHgAA</XPD:REF>
-<XPD:REF name="Views[7]">o3kq+xXGdk+Djjv9mhCNIgAA</XPD:REF>
+<XPD:REF name="Views[0]">iUkpHeIAhkig3qH6wZFUhQAA</XPD:REF>
+<XPD:REF name="Views[1]">IcMrk14o3Eex/fNXjtfGAQAA</XPD:REF>
+<XPD:REF name="Views[2]">4f5fSwyVzkae0LhIUvVgHgAA</XPD:REF>
+<XPD:REF name="Views[3]">o3kq+xXGdk+Djjv9mhCNIgAA</XPD:REF>
+<XPD:REF name="Views[4]">sUaPQyBwNEG0m3Sey2v2gwAA</XPD:REF>
+<XPD:REF name="Views[5]">7dk04YR1S0estrPr/pLrWAAA</XPD:REF>
+<XPD:REF name="Views[6]">PdD8MEfH9kKkq8F4UN2s4AAA</XPD:REF>
+<XPD:REF name="Views[7]">ar2PYRGwP0maUJETyYBIhwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[31]" type="UMLGeneralization" guid="avfjTO47sEaZc/pmuS2jkwAA">
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:REF name="Child">hodOyLQcAEeOHPTAQU5AowAA</XPD:REF>
 <XPD:REF name="Parent">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">2OOMWm8VckCa6lspiIYewgAA</XPD:REF>
-<XPD:REF name="Views[1]">x6jko+MZCEeMLbT7A+CT+wAA</XPD:REF>
-<XPD:REF name="Views[2]">74+ygyFcNEmaLFgaquEYYAAA</XPD:REF>
-<XPD:REF name="Views[3]">ZtakupBCqUyUQAcCUUIE3wAA</XPD:REF>
-<XPD:REF name="Views[4]">yYzFnVGDQkWnZHKCntdhWwAA</XPD:REF>
-<XPD:REF name="Views[5]">jsQHHGkD1kave+WuE15FtAAA</XPD:REF>
-<XPD:REF name="Views[6]">TG4/LujCfU63SNFRjaSWYAAA</XPD:REF>
-<XPD:REF name="Views[7]">lS/kwh0HtkOkTICLol0DYQAA</XPD:REF>
+<XPD:REF name="Views[0]">yYzFnVGDQkWnZHKCntdhWwAA</XPD:REF>
+<XPD:REF name="Views[1]">jsQHHGkD1kave+WuE15FtAAA</XPD:REF>
+<XPD:REF name="Views[2]">TG4/LujCfU63SNFRjaSWYAAA</XPD:REF>
+<XPD:REF name="Views[3]">lS/kwh0HtkOkTICLol0DYQAA</XPD:REF>
+<XPD:REF name="Views[4]">2OOMWm8VckCa6lspiIYewgAA</XPD:REF>
+<XPD:REF name="Views[5]">x6jko+MZCEeMLbT7A+CT+wAA</XPD:REF>
+<XPD:REF name="Views[6]">74+ygyFcNEmaLFgaquEYYAAA</XPD:REF>
+<XPD:REF name="Views[7]">ZtakupBCqUyUQAcCUUIE3wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[32]" type="UMLGeneralization" guid="zdX17RDqUkSPivoFWbIwugAA">
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:REF name="Child">Q2gHELfSekiudFbJNz8lwAAA</XPD:REF>
 <XPD:REF name="Parent">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">MLzkqyaV8Ee6V8o8ecu8PwAA</XPD:REF>
-<XPD:REF name="Views[1]">RcbjlImUl0CeB11JLAawTAAA</XPD:REF>
-<XPD:REF name="Views[2]">Xg7QUAUNLE24kRaTHn+N8gAA</XPD:REF>
-<XPD:REF name="Views[3]">X0M1ppWalkyBLs7Ymk+VWAAA</XPD:REF>
-<XPD:REF name="Views[4]">aoyxcrAFp0ifwZNMstZ0ngAA</XPD:REF>
-<XPD:REF name="Views[5]">OLqMgkxAR0Cu5qMjS144JAAA</XPD:REF>
-<XPD:REF name="Views[6]">tPDf7u8IJkiZnWnBwMjK2AAA</XPD:REF>
-<XPD:REF name="Views[7]">wzs22cWY6k6leDh0y0oJ6wAA</XPD:REF>
+<XPD:REF name="Views[0]">aoyxcrAFp0ifwZNMstZ0ngAA</XPD:REF>
+<XPD:REF name="Views[1]">OLqMgkxAR0Cu5qMjS144JAAA</XPD:REF>
+<XPD:REF name="Views[2]">tPDf7u8IJkiZnWnBwMjK2AAA</XPD:REF>
+<XPD:REF name="Views[3]">wzs22cWY6k6leDh0y0oJ6wAA</XPD:REF>
+<XPD:REF name="Views[4]">MLzkqyaV8Ee6V8o8ecu8PwAA</XPD:REF>
+<XPD:REF name="Views[5]">RcbjlImUl0CeB11JLAawTAAA</XPD:REF>
+<XPD:REF name="Views[6]">Xg7QUAUNLE24kRaTHn+N8gAA</XPD:REF>
+<XPD:REF name="Views[7]">X0M1ppWalkyBLs7Ymk+VWAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[33]" type="UMLAssociation" guid="T4R6rv/plkOJXAMeopwVeAAA">
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
@@ -3110,8 +3107,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">8rOMt7L6Pkynhp42OnxijgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">9g49HGKRXk+fUb3AHchvGQAA</XPD:REF>
-<XPD:REF name="Views[1]">mTDB3HF9nUauKBLdf9L44AAA</XPD:REF>
-<XPD:REF name="Views[2]">Id0OOkNXWUuugXA6ngWFKgAA</XPD:REF>
+<XPD:REF name="Views[1]">Id0OOkNXWUuugXA6ngWFKgAA</XPD:REF>
+<XPD:REF name="Views[2]">mTDB3HF9nUauKBLdf9L44AAA</XPD:REF>
 <XPD:REF name="Views[3]">z3A5ANHEbEurSK/Ja3++BgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="zdWka0BUq0KlKK+NujvsugAA">
@@ -3119,8 +3116,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">wpKzKIaRGEGfgYRjfZBOoQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">VnY+N9jEME+c8OfVdU7JkQAA</XPD:REF>
-<XPD:REF name="Views[1]">wMKYpHSRh06qdf8GpQLxKwAA</XPD:REF>
-<XPD:REF name="Views[2]">Ho2MZV2pukifew3J6ansbwAA</XPD:REF>
+<XPD:REF name="Views[1]">Ho2MZV2pukifew3J6ansbwAA</XPD:REF>
+<XPD:REF name="Views[2]">wMKYpHSRh06qdf8GpQLxKwAA</XPD:REF>
 <XPD:REF name="Views[3]">GCdqYZ6Ibk2i8bSGI0XxQgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3138,8 +3135,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">8rOMt7L6Pkynhp42OnxijgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">/5Y4NGiOLEWmtpfpkF66QwAA</XPD:REF>
-<XPD:REF name="Views[1]">9lMY6VL6YU2PpJIudthLOQAA</XPD:REF>
-<XPD:REF name="Views[2]">JXuseqRPDk+tS7zkQzTqCwAA</XPD:REF>
+<XPD:REF name="Views[1]">JXuseqRPDk+tS7zkQzTqCwAA</XPD:REF>
+<XPD:REF name="Views[2]">9lMY6VL6YU2PpJIudthLOQAA</XPD:REF>
 <XPD:REF name="Views[3]">9Y322S7KkEySn/LbZ97UrgAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="VxFbYHSD6Um99LRgSxnwtgAA">
@@ -3147,8 +3144,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">3Kq2wm53GES5rKwirj8MQwAA</XPD:REF>
-<XPD:REF name="Views[1]">OyrAet7dr0K1YfVNty6rtAAA</XPD:REF>
-<XPD:REF name="Views[2]">6trNxOPgdUCDCrQNwqEhNAAA</XPD:REF>
+<XPD:REF name="Views[1]">6trNxOPgdUCDCrQNwqEhNAAA</XPD:REF>
+<XPD:REF name="Views[2]">OyrAet7dr0K1YfVNty6rtAAA</XPD:REF>
 <XPD:REF name="Views[3]">LvhiaZCLZ0WY6zr5wdRblAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3156,14 +3153,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">ConsoleAddNodeCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">zMUx2LDm/0igcQq28y10jwAA</XPD:REF>
-<XPD:REF name="Views[1]">hytYBwghYU6QqhNDK6okjQAA</XPD:REF>
-<XPD:REF name="Views[2]">R9f3BZsnF0GQDTw5DNZOqQAA</XPD:REF>
-<XPD:REF name="Views[3]">CIz8kraLY0622rbpr5nnqwAA</XPD:REF>
-<XPD:REF name="Views[4]">W95HeKJNNE6y1FL8Q97+QwAA</XPD:REF>
-<XPD:REF name="Views[5]">6k4ra+Q4FUuAu3Mus3ZiRwAA</XPD:REF>
-<XPD:REF name="Views[6]">tuSIR3CnAk2lOiE7UP8N+gAA</XPD:REF>
-<XPD:REF name="Views[7]">hFuE6CcDhEKW/HMJTVikoAAA</XPD:REF>
+<XPD:REF name="Views[0]">W95HeKJNNE6y1FL8Q97+QwAA</XPD:REF>
+<XPD:REF name="Views[1]">6k4ra+Q4FUuAu3Mus3ZiRwAA</XPD:REF>
+<XPD:REF name="Views[2]">tuSIR3CnAk2lOiE7UP8N+gAA</XPD:REF>
+<XPD:REF name="Views[3]">hFuE6CcDhEKW/HMJTVikoAAA</XPD:REF>
+<XPD:REF name="Views[4]">zMUx2LDm/0igcQq28y10jwAA</XPD:REF>
+<XPD:REF name="Views[5]">hytYBwghYU6QqhNDK6okjQAA</XPD:REF>
+<XPD:REF name="Views[6]">R9f3BZsnF0GQDTw5DNZOqQAA</XPD:REF>
+<XPD:REF name="Views[7]">CIz8kraLY0622rbpr5nnqwAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">KjVE8Ywc5kuc4AFOm7ppiwAA</XPD:REF>
 </XPD:OBJ>
@@ -3172,27 +3169,27 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Child">QJFBkHsTtEKAESmi71J0gwAA</XPD:REF>
 <XPD:REF name="Parent">N6NwU3O0z06AMhR7UhayFQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">zlfdpmazikukkxOc3CILXgAA</XPD:REF>
-<XPD:REF name="Views[1]">kBkwhHBDNEuSPX9BL3WS0AAA</XPD:REF>
-<XPD:REF name="Views[2]">sdos6C1fPE2U9NdlZBhz0AAA</XPD:REF>
-<XPD:REF name="Views[3]">/L8PiNY3vU6M3/EiI8z11AAA</XPD:REF>
-<XPD:REF name="Views[4]">5SDtsFghrEOcJej5dH1aYwAA</XPD:REF>
-<XPD:REF name="Views[5]">TpWpJqh0qUqHp+NUI45uhQAA</XPD:REF>
-<XPD:REF name="Views[6]">nrBqVdwHTUqSu26xtyeZZAAA</XPD:REF>
-<XPD:REF name="Views[7]">gF1ISuGgdEaFi+Jv6wdXNAAA</XPD:REF>
+<XPD:REF name="Views[0]">5SDtsFghrEOcJej5dH1aYwAA</XPD:REF>
+<XPD:REF name="Views[1]">TpWpJqh0qUqHp+NUI45uhQAA</XPD:REF>
+<XPD:REF name="Views[2]">nrBqVdwHTUqSu26xtyeZZAAA</XPD:REF>
+<XPD:REF name="Views[3]">gF1ISuGgdEaFi+Jv6wdXNAAA</XPD:REF>
+<XPD:REF name="Views[4]">zlfdpmazikukkxOc3CILXgAA</XPD:REF>
+<XPD:REF name="Views[5]">kBkwhHBDNEuSPX9BL3WS0AAA</XPD:REF>
+<XPD:REF name="Views[6]">sdos6C1fPE2U9NdlZBhz0AAA</XPD:REF>
+<XPD:REF name="Views[7]">/L8PiNY3vU6M3/EiI8z11AAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[37]" type="UMLClass" guid="9/ARESiPIU2LfJdxn6GxPgAA">
 <XPD:ATTR name="Name" type="string">ChangeNodeCommand</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">c9UT+N4b8EScTM7ClWtBNAAA</XPD:REF>
-<XPD:REF name="Views[1]">KT8lgZiGD0We87+7GhrL4gAA</XPD:REF>
-<XPD:REF name="Views[2]">SJbB+HcEaECJUybsRTtJCAAA</XPD:REF>
-<XPD:REF name="Views[3]">VM4d4KTxNk2GF5jWfJOWGgAA</XPD:REF>
-<XPD:REF name="Views[4]">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
-<XPD:REF name="Views[5]">HyaR0dqzhEOnK+4S/Q6GxQAA</XPD:REF>
-<XPD:REF name="Views[6]">nOmvxjz1lkGOI4wmimlHugAA</XPD:REF>
-<XPD:REF name="Views[7]">9QhAy63Xj0KaXO/4kPSY/QAA</XPD:REF>
+<XPD:REF name="Views[0]">N/eaG0Kwk0i6CwM2Zpj08wAA</XPD:REF>
+<XPD:REF name="Views[1]">HyaR0dqzhEOnK+4S/Q6GxQAA</XPD:REF>
+<XPD:REF name="Views[2]">nOmvxjz1lkGOI4wmimlHugAA</XPD:REF>
+<XPD:REF name="Views[3]">9QhAy63Xj0KaXO/4kPSY/QAA</XPD:REF>
+<XPD:REF name="Views[4]">c9UT+N4b8EScTM7ClWtBNAAA</XPD:REF>
+<XPD:REF name="Views[5]">KT8lgZiGD0We87+7GhrL4gAA</XPD:REF>
+<XPD:REF name="Views[6]">SJbB+HcEaECJUybsRTtJCAAA</XPD:REF>
+<XPD:REF name="Views[7]">VM4d4KTxNk2GF5jWfJOWGgAA</XPD:REF>
 <XPD:ATTR name="#Generalizations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Generalizations[0]">+p/xP1cC+kOUSOBEJGbWGAAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
@@ -3216,14 +3213,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Child">9/ARESiPIU2LfJdxn6GxPgAA</XPD:REF>
 <XPD:REF name="Parent">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">uUHdrb9c2U+TF3BzO1f3nAAA</XPD:REF>
-<XPD:REF name="Views[1]">ToK/67BczkedYYSqljFjWQAA</XPD:REF>
-<XPD:REF name="Views[2]">4ZRd6sbXlUu72wZyEI4edwAA</XPD:REF>
-<XPD:REF name="Views[3]">pgiL/6eEWE6EqBD7MGJX5wAA</XPD:REF>
-<XPD:REF name="Views[4]">yFaY1cayxki+QmjWNX6LtQAA</XPD:REF>
-<XPD:REF name="Views[5]">GWqDqbEPTEuECJhICoDn/gAA</XPD:REF>
-<XPD:REF name="Views[6]">hUILtakYQEO1wH5tu5I4SwAA</XPD:REF>
-<XPD:REF name="Views[7]">Iv4FeAI6ikehc6/dtVH0ZQAA</XPD:REF>
+<XPD:REF name="Views[0]">yFaY1cayxki+QmjWNX6LtQAA</XPD:REF>
+<XPD:REF name="Views[1]">GWqDqbEPTEuECJhICoDn/gAA</XPD:REF>
+<XPD:REF name="Views[2]">hUILtakYQEO1wH5tu5I4SwAA</XPD:REF>
+<XPD:REF name="Views[3]">Iv4FeAI6ikehc6/dtVH0ZQAA</XPD:REF>
+<XPD:REF name="Views[4]">uUHdrb9c2U+TF3BzO1f3nAAA</XPD:REF>
+<XPD:REF name="Views[5]">ToK/67BczkedYYSqljFjWQAA</XPD:REF>
+<XPD:REF name="Views[6]">4ZRd6sbXlUu72wZyEI4edwAA</XPD:REF>
+<XPD:REF name="Views[7]">pgiL/6eEWE6EqBD7MGJX5wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedElements[39]" type="UMLAssociation" guid="vOmx7M67gEWTMiui98E65gAA">
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
@@ -3238,8 +3235,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">9/ARESiPIU2LfJdxn6GxPgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">qfqfuWUVWEeoGrXdlMOpYAAA</XPD:REF>
-<XPD:REF name="Views[1]">q4+wsd+vjE+UAAqA1ysJ2AAA</XPD:REF>
-<XPD:REF name="Views[2]">WZ1GvYxAQUaOHeMkKNwcMgAA</XPD:REF>
+<XPD:REF name="Views[1]">WZ1GvYxAQUaOHeMkKNwcMgAA</XPD:REF>
+<XPD:REF name="Views[2]">q4+wsd+vjE+UAAqA1ysJ2AAA</XPD:REF>
 <XPD:REF name="Views[3]">KnfjcyJs7EiLratSngRCXwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="Dvh+mOgFbUe2LXdi0Y3DNAAA">
@@ -3247,8 +3244,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">BUIZKL4sckCIYrfxsBSJegAA</XPD:REF>
-<XPD:REF name="Views[1]">O8Kue6TOeEyFM6w91lCVEAAA</XPD:REF>
-<XPD:REF name="Views[2]">i2I+NFJyL0CH9vN4NOhr/gAA</XPD:REF>
+<XPD:REF name="Views[1]">i2I+NFJyL0CH9vN4NOhr/gAA</XPD:REF>
+<XPD:REF name="Views[2]">O8Kue6TOeEyFM6w91lCVEAAA</XPD:REF>
 <XPD:REF name="Views[3]">qmIzFsjj1kysTx7j7bFgWgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3265,8 +3262,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">4bclwv2ps0mxr1eZ/V6g1wAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">hbdD045bC0CYN0Ac+0RLFgAA</XPD:REF>
-<XPD:REF name="Views[1]">r3epv4tkzE6STq6weymjIwAA</XPD:REF>
-<XPD:REF name="Views[2]">Gwt4DYbpJUC0hXVdNGTT9gAA</XPD:REF>
+<XPD:REF name="Views[1]">Gwt4DYbpJUC0hXVdNGTT9gAA</XPD:REF>
+<XPD:REF name="Views[2]">r3epv4tkzE6STq6weymjIwAA</XPD:REF>
 <XPD:REF name="Views[3]">9unJV5gnvUqMs2khS92NfQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="u55AuSBhfEekIrUGnbsXHgAA">
@@ -3274,8 +3271,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">WOpJG//wQkWnV4qIdqsesQAA</XPD:REF>
-<XPD:REF name="Views[1]">4UiTyc07pEuF70os8cn00AAA</XPD:REF>
-<XPD:REF name="Views[2]">JLa3XWiSPkyuRmIJiLrnqgAA</XPD:REF>
+<XPD:REF name="Views[1]">JLa3XWiSPkyuRmIJiLrnqgAA</XPD:REF>
+<XPD:REF name="Views[2]">4UiTyc07pEuF70os8cn00AAA</XPD:REF>
 <XPD:REF name="Views[3]">3LEbg12IzUWTF7LXbCvYWgAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3304,8 +3301,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">hodOyLQcAEeOHPTAQU5AowAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">v4eLvh/2gEqFl6si8RF3FwAA</XPD:REF>
-<XPD:REF name="Views[1]">N1uvxaR800qP4PLu1iTlKgAA</XPD:REF>
-<XPD:REF name="Views[2]">bKDGhB/0bkWhzWGzGJSXegAA</XPD:REF>
+<XPD:REF name="Views[1]">bKDGhB/0bkWhzWGzGJSXegAA</XPD:REF>
+<XPD:REF name="Views[2]">N1uvxaR800qP4PLu1iTlKgAA</XPD:REF>
 <XPD:REF name="Views[3]">8aUcupWK+UCdO95LDLFYmAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="2H/+LRsTcEyALDm4DWUhRQAA">
@@ -3313,8 +3310,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">1CIiMpP1TkG0oNyi/C7wSgAA</XPD:REF>
-<XPD:REF name="Views[1]">tMT7gmBuzECBvPYrHAz0fQAA</XPD:REF>
-<XPD:REF name="Views[2]">2Gt5fVMXnkinLBbg31mBDgAA</XPD:REF>
+<XPD:REF name="Views[1]">2Gt5fVMXnkinLBbg31mBDgAA</XPD:REF>
+<XPD:REF name="Views[2]">tMT7gmBuzECBvPYrHAz0fQAA</XPD:REF>
 <XPD:REF name="Views[3]">RuH9e9mmwESa/CIgmyaqlAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3331,8 +3328,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">Q2gHELfSekiudFbJNz8lwAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">QgQ30Ykye0iNnp3ZChpVlAAA</XPD:REF>
-<XPD:REF name="Views[1]">gYimr/8U0U2wToAnAQ64VAAA</XPD:REF>
-<XPD:REF name="Views[2]">Pdry9LVO706/FTjcZ49wCQAA</XPD:REF>
+<XPD:REF name="Views[1]">Pdry9LVO706/FTjcZ49wCQAA</XPD:REF>
+<XPD:REF name="Views[2]">gYimr/8U0U2wToAnAQ64VAAA</XPD:REF>
 <XPD:REF name="Views[3]">hMWDHJw14k6ryZ2nQNoueQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="SNu24TVZD0WRp5GT65GXGQAA">
@@ -3340,8 +3337,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">A1rME0S9EUCOp5qg/eCHtwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">zhLEJ/Q26kqJ7ErI2tBzmQAA</XPD:REF>
-<XPD:REF name="Views[1]">dDWxoAeCIUaH6FjwJw81qwAA</XPD:REF>
-<XPD:REF name="Views[2]">jI+AWKnXoUyyjQ/gZxPw9AAA</XPD:REF>
+<XPD:REF name="Views[1]">jI+AWKnXoUyyjQ/gZxPw9AAA</XPD:REF>
+<XPD:REF name="Views[2]">dDWxoAeCIUaH6FjwJw81qwAA</XPD:REF>
 <XPD:REF name="Views[3]">33R3NGW6m0KRU2t6mDTX8gAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3371,8 +3368,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">8rOMt7L6Pkynhp42OnxijgAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">MAUc9yk1m0qVX2ttfnxIEgAA</XPD:REF>
-<XPD:REF name="Views[1]">AqrQBt+P30iM3oJV9HRD5wAA</XPD:REF>
-<XPD:REF name="Views[2]">QT3HQFlCtUW54hTpB4vyxgAA</XPD:REF>
+<XPD:REF name="Views[1]">QT3HQFlCtUW54hTpB4vyxgAA</XPD:REF>
+<XPD:REF name="Views[2]">AqrQBt+P30iM3oJV9HRD5wAA</XPD:REF>
 <XPD:REF name="Views[3]">5Kab4Jwmxk+ss103r2B+5wAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="sL1E2S2hOEyn2ePeKNw5WAAA">
@@ -3381,8 +3378,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">4FMOnygRRUS94yPBG0tguwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">ay5YhYz2g06lJhqEgeOoyAAA</XPD:REF>
-<XPD:REF name="Views[1]">GnbKUDOJ3ki1wTXw2pq7tAAA</XPD:REF>
-<XPD:REF name="Views[2]">jPIEAhL7lkmc0+g62cXahAAA</XPD:REF>
+<XPD:REF name="Views[1]">jPIEAhL7lkmc0+g62cXahAAA</XPD:REF>
+<XPD:REF name="Views[2]">GnbKUDOJ3ki1wTXw2pq7tAAA</XPD:REF>
 <XPD:REF name="Views[3]">rxzKkhqrQEuSrHKt4NhhogAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3390,14 +3387,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">ItemToBuy</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">rDWCrGyMXUinarDoml5z7wAA</XPD:REF>
-<XPD:REF name="Views[1]">zPisPW/3BU24srR3zE3mXgAA</XPD:REF>
-<XPD:REF name="Views[2]">TnBjGoN3IUS6nav3f3QiJgAA</XPD:REF>
-<XPD:REF name="Views[3]">6DzdBZzhoUKsKnaCP9JEMQAA</XPD:REF>
-<XPD:REF name="Views[4]">5xB/SKnZC0CoUO0hkYNa9QAA</XPD:REF>
-<XPD:REF name="Views[5]">cVNq2LF6nU+HXl5VqnAe/wAA</XPD:REF>
-<XPD:REF name="Views[6]">ob+XZo86EUqeMli5E4VDPgAA</XPD:REF>
-<XPD:REF name="Views[7]">GmiuUDrQaEOliUAIasv6VQAA</XPD:REF>
+<XPD:REF name="Views[0]">5xB/SKnZC0CoUO0hkYNa9QAA</XPD:REF>
+<XPD:REF name="Views[1]">cVNq2LF6nU+HXl5VqnAe/wAA</XPD:REF>
+<XPD:REF name="Views[2]">ob+XZo86EUqeMli5E4VDPgAA</XPD:REF>
+<XPD:REF name="Views[3]">GmiuUDrQaEOliUAIasv6VQAA</XPD:REF>
+<XPD:REF name="Views[4]">rDWCrGyMXUinarDoml5z7wAA</XPD:REF>
+<XPD:REF name="Views[5]">zPisPW/3BU24srR3zE3mXgAA</XPD:REF>
+<XPD:REF name="Views[6]">TnBjGoN3IUS6nav3f3QiJgAA</XPD:REF>
+<XPD:REF name="Views[7]">6DzdBZzhoUKsKnaCP9JEMQAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">2</XPD:ATTR>
 <XPD:REF name="Associations[0]">Jh05noBLqUu7oXWlgYdICAAA</XPD:REF>
 <XPD:REF name="Associations[1]">VJ7DZbWpz0WwVOsHAlz+2gAA</XPD:REF>
@@ -3432,14 +3429,14 @@ notified() - принимает сообщение от DBProcessor
 <XPD:ATTR name="Name" type="string">Supplier</XPD:ATTR>
 <XPD:REF name="Namespace">Z7KllDriSkGTM6C9Z7GoggAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">8</XPD:ATTR>
-<XPD:REF name="Views[0]">sKIRYUm8LUu5qpwMDaiqigAA</XPD:REF>
-<XPD:REF name="Views[1]">PVVylOT7DEeyeznNc/xIPQAA</XPD:REF>
-<XPD:REF name="Views[2]">+wF3ihAH1kWZxhweqlZ4zQAA</XPD:REF>
-<XPD:REF name="Views[3]">4oujaTQEskCQJNd3JkmHJQAA</XPD:REF>
-<XPD:REF name="Views[4]">qkrNVwpmRU+5LCITU8doEwAA</XPD:REF>
-<XPD:REF name="Views[5]">+dkmmYy+fEK58OGVf2iVIgAA</XPD:REF>
-<XPD:REF name="Views[6]">VNQ3Kawd1k+awRvNt3hMeQAA</XPD:REF>
-<XPD:REF name="Views[7]">zzx58zrTXUq3WFTG+UWhHgAA</XPD:REF>
+<XPD:REF name="Views[0]">qkrNVwpmRU+5LCITU8doEwAA</XPD:REF>
+<XPD:REF name="Views[1]">+dkmmYy+fEK58OGVf2iVIgAA</XPD:REF>
+<XPD:REF name="Views[2]">VNQ3Kawd1k+awRvNt3hMeQAA</XPD:REF>
+<XPD:REF name="Views[3]">zzx58zrTXUq3WFTG+UWhHgAA</XPD:REF>
+<XPD:REF name="Views[4]">sKIRYUm8LUu5qpwMDaiqigAA</XPD:REF>
+<XPD:REF name="Views[5]">PVVylOT7DEeyeznNc/xIPQAA</XPD:REF>
+<XPD:REF name="Views[6]">+wF3ihAH1kWZxhweqlZ4zQAA</XPD:REF>
+<XPD:REF name="Views[7]">4oujaTQEskCQJNd3JkmHJQAA</XPD:REF>
 <XPD:ATTR name="#Associations" type="integer">1</XPD:ATTR>
 <XPD:REF name="Associations[0]">JwEDeHIqo0SfnE0O2XrgwAAA</XPD:REF>
 <XPD:ATTR name="#Attributes" type="integer">8</XPD:ATTR>
@@ -3490,8 +3487,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">NUtlmk0VY0O/yAc9ddW3cwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">5gvXdlTBlka7b6LNx2yGKAAA</XPD:REF>
-<XPD:REF name="Views[1]">KW9wUYEvmUCr3UUUWgjGpAAA</XPD:REF>
-<XPD:REF name="Views[2]">bkatgaK6iESUnxzGl5lvjQAA</XPD:REF>
+<XPD:REF name="Views[1]">bkatgaK6iESUnxzGl5lvjQAA</XPD:REF>
+<XPD:REF name="Views[2]">KW9wUYEvmUCr3UUUWgjGpAAA</XPD:REF>
 <XPD:REF name="Views[3]">o60ErLiyjUa7p3T8OOBnsAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="Jh05noBLqUu7oXWlgYdICAAA">
@@ -3499,8 +3496,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">BAfXJu3f/Uuj42IUvBPXxwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">5vVwKdB4Q0uqZSgIqr3NxQAA</XPD:REF>
-<XPD:REF name="Views[1]">LLo9g9j7XEq4mFxdFPx/vQAA</XPD:REF>
-<XPD:REF name="Views[2]">vFLL4JMuvEC9ACbtPMyNLAAA</XPD:REF>
+<XPD:REF name="Views[1]">vFLL4JMuvEC9ACbtPMyNLAAA</XPD:REF>
+<XPD:REF name="Views[2]">LLo9g9j7XEq4mFxdFPx/vQAA</XPD:REF>
 <XPD:REF name="Views[3]">HRD1l+5IpkWQq9nCkNmkYQAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -3518,8 +3515,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">BAfXJu3f/Uuj42IUvBPXxwAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">N3YXpg6dvk+P3LT18FOjQwAA</XPD:REF>
-<XPD:REF name="Views[1]">/mSu1w+AjUyW7k8CNr6+9AAA</XPD:REF>
-<XPD:REF name="Views[2]">F6pHDHNAOEahjBg7YOoH8AAA</XPD:REF>
+<XPD:REF name="Views[1]">F6pHDHNAOEahjBg7YOoH8AAA</XPD:REF>
+<XPD:REF name="Views[2]">/mSu1w+AjUyW7k8CNr6+9AAA</XPD:REF>
 <XPD:REF name="Views[3]">dn6rN5EerU+U2c/klOdySAAA</XPD:REF>
 </XPD:OBJ>
 <XPD:OBJ name="Connections[1]" type="UMLAssociationEnd" guid="JwEDeHIqo0SfnE0O2XrgwAAA">
@@ -3527,8 +3524,8 @@ notified() - принимает сообщение от DBProcessor
 <XPD:REF name="Participant">lpdXJD5FsEWAVc6W2OOAVAAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
 <XPD:REF name="Views[0]">39qIT84a7UO3A9N0A6Zf4wAA</XPD:REF>
-<XPD:REF name="Views[1]">WRGhUGDWcEyPy+mdxm7duwAA</XPD:REF>
-<XPD:REF name="Views[2]">LXhYb8WKBEKMH5P1GHLcGgAA</XPD:REF>
+<XPD:REF name="Views[1]">LXhYb8WKBEKMH5P1GHLcGgAA</XPD:REF>
+<XPD:REF name="Views[2]">WRGhUGDWcEyPy+mdxm7duwAA</XPD:REF>
 <XPD:REF name="Views[3]">Eaui5zLDIk2KQDVIWd+CwAAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
