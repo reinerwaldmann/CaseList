@@ -151,17 +151,14 @@ class db_serializable ():
         :param table - таблица, может доставаться из словаря известных
 
         """
-
         if not table:
             table = self.tables[type (obj)]
 
         if table == '':
             table = type (obj).__name__+'s'
 
-
         with self as cur:
-
-            collist = self.get_column_list(cur, table)
+            collist = self.get_column_list( table, cur)
             if obj._id is None:
                 collist.remove('_id')
             else:
@@ -230,25 +227,26 @@ def test():
     dbs = db_serializable(filename)
 
 
+
     an = AbstractNode()
-    an._shortText = 'Trololo, hey all'
+    an._shortText = 'Превед медвед'
 
 
+
+    dbs.insert_to_db(an, 'cases')
 
     #dbs.make_any_query(filename, dbs.insert_to_db, an, 'cases')
+    return
 
-    #print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
+    print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
 
+    return
 
     for i in range (10):
         try:
             print ( dbs.get_from_db(i, AbstractNode, table='cases'))
         except NoSuchCaseInDBError:
             pass
-
-
-
-
 
     #print (an)
 

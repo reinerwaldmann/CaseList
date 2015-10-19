@@ -63,9 +63,8 @@ def nice_func_for_file (fpath, artist):
     except:
         pass
 
-for_folder(foldename_music, artist_name)
+#for_folder(foldename_music, artist_name)
 
-exit(0)
 
 authors_list=[]
 
@@ -94,8 +93,10 @@ futura_music = 'D:\\futura_music'
 for_folder_generic(foldename_music, extract_authors_func)
 print (sorted(set(authors_list)))
 
-for iii in sorted(set(authors_list)):
-    makedirs(join(futura_music, iii))
+
+
+# for iii in sorted(set(authors_list)):
+#     makedirs(join(futura_music, iii))
 
 
 
