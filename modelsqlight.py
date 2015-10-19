@@ -43,8 +43,25 @@ class mainform(QWidget):
 #http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html
         self.view.setModel(self.model2)  # устанавливаем модель для вида
 
+
+
         self.model2.setTable("cases")  # устанавливаем таблицу и селектим из неё всё
         self.model2.select() # вот на этом этапе модель заполняется данными
+
+
+        self.view.header().moveSection(11,1)
+        self.view.header().moveSection(12,2)
+        self.view.header().moveSection(13,3)
+
+
+        self.view.hideColumn(6)
+        self.view.hideColumn(7)
+        self.view.hideColumn(8)
+        #self.view.hideColumn(9)
+        self.view.header().hideSection(9)
+        #
+
+
 
 #        print (self.model2.rowCount()) # возвращает количество строк
 
@@ -71,6 +88,44 @@ class mainform(QWidget):
 
 #http://ftp.ics.uci.edu/pub/centos0/ics-custom-build/BUILD/PyQt-x11-gpl-4.7.2/examples/itemviews/simpletreemodel/simpletreemodel.py
 
+
+
+
+
+
+class TreeItem(object):
+    def __init__(self, data, parent=None):
+        self.parentItem = parent
+        self.itemData = data
+        self.childItems = []
+
+    def appendChild(self, item):
+        self.childItems.append(item)
+
+    def child(self, row):
+        return self.childItems[row]
+
+    def childCount(self):
+        return len(self.childItems)
+
+    def columnCount(self):
+        return len(self.itemData)
+
+    def data(self, column):
+        try:
+            return self.itemData[column]
+        except IndexError:
+            return None
+
+    def parent(self):
+        return self.parentItem
+
+    def row(self):
+        if self.parentItem:
+            return self.parentItem.childItems.index(self)
+
+        return 0
+
 class TableToTreeModel2 (QAbstractItemModel):
     """
     Более новый вариант - используем композицию, то есть абстрактная модель
@@ -92,17 +147,48 @@ class TableToTreeModel2 (QAbstractItemModel):
         self.dbmodel.select()
         #здесь должны грузиться данные
 
+
+        dct = dict () #словарь айди - список строк с данными
         for ind in range (self.dbmodel.rowCount()):
-            rec = self.dbmodel.record(ind)
-            fnames = [self.dbmodel.record(ind).fieldName(j) for j in range(self.dbmodel.record(ind).count())]
-            dlst = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
+            dct[int(self.dbmodel.record(ind).value(0))] = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
 
-            ii = fnames.index('_parents')
-            if dlst[ii]=='[]':
-                it = TreeItem (dlst, self.rootItem)
-                self.rootItem.appendChild(it)
+        def find_children_and_append (item:TreeItem, dct):
+            chlist = eval(item.data(6))
+            for ch in chlist:
+                tri = TreeItem(dct[ch], item)
+                if tri.data(6) != '[]':
+                    find_children_and_append(tri,dct)
+                item.appendChild(tri)
 
-        print (fnames, dlst)
+
+
+        for i in [j for j in dct.values() if j[8]=='[]']:
+            tri = TreeItem(i, self.rootItem)
+            find_children_and_append(tri,dct)
+            self.rootItem.appendChild(tri)
+
+
+
+
+
+
+        # for ind in range (self.dbmodel.rowCount()):
+        #     fnames = [self.dbmodel.record(ind).fieldName(j) for j in range(self.dbmodel.record(ind).count())]
+        #     dlst = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
+        #     ii = fnames.index('_parents')
+        #     if dlst[ii]=='[]':
+        #         it = TreeItem (dlst, self.rootItem)
+        #         self.rootItem.appendChild(it)
+        #
+        # for child in self.rootItem.childItems:
+        #     chlst = eval(str(child.data(6)))
+        #     for chind in chlst:
+        #         dlst = [self.dbmodel.record(chind).value(j) for j in range(self.dbmodel.record(chind).count())]
+        #         child.appendChild(TreeItem(dlst,child))
+        #
+        #         self.dbmodel.selectRow()
+
+
 
 
 
@@ -151,43 +237,20 @@ class TableToTreeModel2 (QAbstractItemModel):
             parentItem = parent.internalPointer()
         return parentItem.childCount()
 
+    def parent(self, index):
+        if not index.isValid():
+            return QModelIndex()
+
+        childItem = index.internalPointer()
+        parentItem = childItem.parent()
+
+        if parentItem == self.rootItem:
+            return QModelIndex()
+
+        return self.createIndex(parentItem.row(), 0, parentItem)
 
 
 
-
-
-class TreeItem(object):
-    def __init__(self, data, parent=None):
-        self.parentItem = parent
-        self.itemData = data
-        self.childItems = []
-
-    def appendChild(self, item):
-        self.childItems.append(item)
-
-    def child(self, row):
-        return self.childItems[row]
-
-    def childCount(self):
-        return len(self.childItems)
-
-    def columnCount(self):
-        return len(self.itemData)
-
-    def data(self, column):
-        try:
-            return self.itemData[column]
-        except IndexError:
-            return None
-
-    def parent(self):
-        return self.parentItem
-
-    def row(self):
-        if self.parentItem:
-            return self.parentItem.childItems.index(self)
-
-        return 0
 
 
 
