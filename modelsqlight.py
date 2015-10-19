@@ -46,14 +46,16 @@ class mainform(QWidget):
         self.model2.setTable("cases")  # устанавливаем таблицу и селектим из неё всё
         self.model2.select() # вот на этом этапе модель заполняется данными
 
-        print (self.model2.rowCount()) # возвращает количество строк
+#        print (self.model2.rowCount()) # возвращает количество строк
 
-        for i in range (self.model2.rowCount()):
-            print (self.model2.data ( self.model2.index(i,1) ))
+        # for i in range (self.model2.rowCount()):
+        #     print (self.model2.data ( self.model2.index(i,1) ))
 
 
         #self.model2.setFilter('_id>1')  # установка фильтра на селект
         #self.model2.setFilter('')  # и снятие оного
+
+
 
         #print (self.model2.record(0).value('_shortText')) #  так можно получить данные
         #print (self.model2.index(0,0))
@@ -79,13 +81,29 @@ class TableToTreeModel2 (QAbstractItemModel):
         QAbstractItemModel.__init__(self, m)
 
         # попробуем сделать композицию
-        self.dbmodel = TableToTreeModel(self, connection)
+        self.dbmodel = QSqlTableModel(self, connection)
+        self.rootItem = TreeItem (['x' for i in range (14)])
+
+
 
     def setTable(self, tname):
         self.dbmodel.setTable(tname)
     def select(self):
         self.dbmodel.select()
         #здесь должны грузиться данные
+
+        for ind in range (self.dbmodel.rowCount()):
+            rec = self.dbmodel.record(ind)
+            fnames = [self.dbmodel.record(ind).fieldName(j) for j in range(self.dbmodel.record(ind).count())]
+            dlst = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
+
+            ii = fnames.index('_parents')
+            if dlst[ii]=='[]':
+                it = TreeItem (dlst, self.rootItem)
+                self.rootItem.appendChild(it)
+
+        print (fnames, dlst)
+
 
 
 
@@ -124,6 +142,7 @@ class TableToTreeModel2 (QAbstractItemModel):
             return QModelIndex()
 
     def rowCount(self, parent):
+
         if parent.column() > 0:
             return 0
         if not parent.isValid():
@@ -131,20 +150,6 @@ class TableToTreeModel2 (QAbstractItemModel):
         else:
             parentItem = parent.internalPointer()
         return parentItem.childCount()
-
-
-
-
-
-
-
-
-
-
-
-    def rowCount(self, QModelIndex_parent=None, *args, **kwargs):
-        return 0
-
 
 
 
