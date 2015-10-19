@@ -1,6 +1,19 @@
 __author__ = 'vasilev_is'
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+exit(0)
 import sys
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtWidgets import QApplication, QWidget
@@ -12,6 +25,10 @@ from PyQt5.QtCore import QCoreApplication
 from ui.mainwindow import Ui_MainWindow
 
 #mw = Ui_MainWindow ()
+
+
+
+
 
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
