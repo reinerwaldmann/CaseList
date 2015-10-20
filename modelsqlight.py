@@ -99,11 +99,11 @@ class TreeItem(object):
         return len(self.childItems)
 
     def columnCount(self):
-        return len(self.itemData)
+        return self.itemData.count()
 
     def data(self, column):
         try:
-            return self.itemData[column]
+            return self.itemData.value(column)
         except IndexError:
             return None
 
@@ -161,8 +161,12 @@ class TableToTreeModel2 (QAbstractItemModel):
 
         for ind in range (self.dbmodel.rowCount()):
             #dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
-            dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
+            dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = self.dbmodel.record(ind)
+            self.dbmodel.record(ind).setValue(12, 'sdfsdfsf')
 
+
+            #dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = ind
+            # получается словарь - айдишник к рекорду
 
 
 
@@ -176,7 +180,8 @@ class TableToTreeModel2 (QAbstractItemModel):
 
 
 
-        for i in [j for j in dct.values() if j[8]=='[]']:
+        #for i in [j for j in dct.values() if j[8]=='[]']:
+        for i in [j for j in dct.values() if j.value(8)=='[]']:
             tri = TreeItem(i, self.rootItem)
             find_children_and_append(tri,dct)
             self.rootItem.appendChild(tri)
