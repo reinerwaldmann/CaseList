@@ -411,7 +411,27 @@ class DBProcessor():
 
 
 class ItemToBuy():
-    pass
+    """
+    Item to buy
+    """
+
+
+    def __init__(self):
+        self.name = ''
+        self.comment = ''
+        self.suppliers = [] # list of tuple - price, comment, supplier
+        self.priority=0
+        self.legacy_price=0
+        self.legacy_category=''
+        self.quantity=0
+
+
+
 
 class Supplier ():
-    pass
+    def __init__(self):
+        self.name = ''
+        self.address = ''
+        self.comment = ''
+        self.contacts = ''
+        self.gps_coordinates = ''

@@ -1,5 +1,6 @@
 from DBStuff import AbstractNode, ItemToBuy, Supplier
 
+
 __author__ = 'reiner'
 import sqlite3
 
@@ -221,27 +222,15 @@ class db_serializable ():
 
 
 def test():
-
     filename = 'fn.sqlite'
-
     dbs = db_serializable(filename)
-
-
-
     an = AbstractNode()
     an._shortText = 'Превед медвед'
-
-
-
     dbs.insert_to_db(an, 'cases')
-
     #dbs.make_any_query(filename, dbs.insert_to_db, an, 'cases')
     return
-
     print (dbs.make_any_query(filename, dbs.get_from_db, 1, AbstractNode, table = 'cases'))
-
     return
-
     for i in range (10):
         try:
             print ( dbs.get_from_db(i, AbstractNode, table='cases'))
@@ -250,10 +239,18 @@ def test():
 
     #print (an)
 
+def test1():
+    filename = 'fn.sqlite'
+    dbs = db_serializable(filename)
+    an = ItemToBuy
+    dbs.init_table(ItemToBuy,'buy')
+
+
+
 
 
 if __name__ == '__main__':
-    test()
+    test1()
 
 # а если инкнудить, то тест не включится
 

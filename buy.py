@@ -10,6 +10,12 @@ class ItemToBuy():
         name = ''
         comment = ''
         suppliers = [] # list of tuple - price, comment, supplier
+        priority=0
+        legacy_price=0
+        legacy_category=''
+
+
+
 
 
 

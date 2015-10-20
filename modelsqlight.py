@@ -22,6 +22,9 @@ class mainform(QWidget):
 
 
     def connect(self):
+#http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html
+#http://ftp.ics.uci.edu/pub/centos0/ics-custom-build/BUILD/PyQt-x11-gpl-4.7.2/examples/itemviews/simpletreemodel/simpletreemodel.py
+
         con = qsq.QSqlDatabase.addDatabase("QSQLITE", 'Base') #  делаем подключение к БД
         con.setDatabaseName("fn.sqlite") #  устанавливаем имя базы
 
@@ -39,12 +42,7 @@ class mainform(QWidget):
         self.view = QTreeView()
 
         self.model2 = TableToTreeModel2(self, con)  # создаём модельку - стандартную для БД, табличную
-
-#http://doc.qt.io/qt-5/qtwidgets-itemviews-simpletreemodel-example.html
         self.view.setModel(self.model2)  # устанавливаем модель для вида
-
-
-
         self.model2.setTable("cases")  # устанавливаем таблицу и селектим из неё всё
         self.model2.select() # вот на этом этапе модель заполняется данными
 
@@ -54,6 +52,8 @@ class mainform(QWidget):
         self.view.header().moveSection(13,3)
 
 
+
+        self.view.hideColumn(1)
         self.view.hideColumn(6)
         self.view.hideColumn(7)
         self.view.hideColumn(8)
@@ -62,33 +62,23 @@ class mainform(QWidget):
         #
 
 
-
 #        print (self.model2.rowCount()) # возвращает количество строк
 
         # for i in range (self.model2.rowCount()):
         #     print (self.model2.data ( self.model2.index(i,1) ))
 
-
         #self.model2.setFilter('_id>1')  # установка фильтра на селект
         #self.model2.setFilter('')  # и снятие оного
 
-
-
         #print (self.model2.record(0).value('_shortText')) #  так можно получить данные
         #print (self.model2.index(0,0))
-
 #        print (self.model2.data ( self.model2.index(0,0) ))
-
 
         self.layout = QVBoxLayout()  # пихаем вид в интерфейс
         self.layout.addWidget(self.view)
         self.setLayout(self.layout)
 
         con.close()  # закрываем соединение
-
-#http://ftp.ics.uci.edu/pub/centos0/ics-custom-build/BUILD/PyQt-x11-gpl-4.7.2/examples/itemviews/simpletreemodel/simpletreemodel.py
-
-
 
 
 
@@ -137,20 +127,44 @@ class TableToTreeModel2 (QAbstractItemModel):
 
         # попробуем сделать композицию
         self.dbmodel = QSqlTableModel(self, connection)
-        self.rootItem = TreeItem (['x' for i in range (14)])
+        self.dbmodel.setEditStrategy(0) # при каждом изменении поля
+        #print (self.dbmodel.hasIndex(1,12))
 
 
+        self.headers=['id',
+                      '_buy',
+                      'deadline',
+                      'made',
+                      'significance',
+                      'urgency',
+                      '_children',
+                      '_next',
+                      '_parents',
+                      '_prev',
+                      'season',
+                      'short text',
+                      'tags',
+                      'text']
+
+        self.rootItem = TreeItem (self.headers)
 
     def setTable(self, tname):
         self.dbmodel.setTable(tname)
+
     def select(self):
         self.dbmodel.select()
         #здесь должны грузиться данные
 
 
         dct = dict () #словарь айди - список строк с данными
+
+
         for ind in range (self.dbmodel.rowCount()):
-            dct[int(self.dbmodel.record(ind).value(0))] = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
+            #dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
+            dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
+
+
+
 
         def find_children_and_append (item:TreeItem, dct):
             chlist = eval(item.data(6))
@@ -170,30 +184,6 @@ class TableToTreeModel2 (QAbstractItemModel):
 
 
 
-
-
-        # for ind in range (self.dbmodel.rowCount()):
-        #     fnames = [self.dbmodel.record(ind).fieldName(j) for j in range(self.dbmodel.record(ind).count())]
-        #     dlst = [self.dbmodel.record(ind).value(j) for j in range(self.dbmodel.record(ind).count())]
-        #     ii = fnames.index('_parents')
-        #     if dlst[ii]=='[]':
-        #         it = TreeItem (dlst, self.rootItem)
-        #         self.rootItem.appendChild(it)
-        #
-        # for child in self.rootItem.childItems:
-        #     chlst = eval(str(child.data(6)))
-        #     for chind in chlst:
-        #         dlst = [self.dbmodel.record(chind).value(j) for j in range(self.dbmodel.record(chind).count())]
-        #         child.appendChild(TreeItem(dlst,child))
-        #
-        #         self.dbmodel.selectRow()
-
-
-
-
-
-
-
     def columnCount(self, QModelIndex_parent=None, *args, **kwargs):
         return self.dbmodel.columnCount()
 
@@ -208,11 +198,13 @@ class TableToTreeModel2 (QAbstractItemModel):
     def flags(self, index):
         if not index.isValid():
             return Qt.NoItemFlags
-        return Qt.ItemIsEnabled | Qt.ItemIsSelectable
+        return Qt.ItemIsEnabled | Qt.ItemIsSelectable |Qt.ItemIsEditable
 
     def headerData(self, section, orientation, role):
         if orientation == Qt.Horizontal and role == Qt.DisplayRole:
-            return self.dbmodel.headerData(section,orientation,role)
+            return self.headers[section]
+            #return self.dbmodel.headerData(section,orientation,role)
+
 
     def index(self, row, column, parent):
         if not self.hasIndex(row, column, parent):
@@ -228,7 +220,6 @@ class TableToTreeModel2 (QAbstractItemModel):
             return QModelIndex()
 
     def rowCount(self, parent):
-
         if parent.column() > 0:
             return 0
         if not parent.isValid():
@@ -240,54 +231,21 @@ class TableToTreeModel2 (QAbstractItemModel):
     def parent(self, index):
         if not index.isValid():
             return QModelIndex()
-
         childItem = index.internalPointer()
         parentItem = childItem.parent()
-
         if parentItem == self.rootItem:
             return QModelIndex()
-
         return self.createIndex(parentItem.row(), 0, parentItem)
 
-
-
-
-
-
-
-
-class TableToTreeModel (QSqlTableModel):
-    structure = []
-    def select(self):
-        QSqlTableModel.select(self)
-        temp = []
-        for i in range (self.rowCount()):
-            temp.append(self.record(i))
-
-        for t in temp:
-            if not eval(str(t.value('_parents'))):
-                self.structure.append(TreeItem(t))
-
-    def data(self, index:QModelIndex, int_role=None):
-        if not index.isValid():
-            return QVariant()
-
-
-        if int_role != Qt.DisplayRole:
-            return QVariant()
-
-        r = index.row()
-        c = index.column()
-
-        return self.structure[r].data(c)
-
-
-
-
-
-         # здесь должна создаваться древовидная структура данных
-
-
+    def setData(self, modelIndex, value, int_role=Qt.EditRole):
+        """
+        Функция вызывается при установке данных
+        :param QModelIndex:
+        :param QVariant:
+        :param int_role:
+        :return:
+        """
+        print ('setdata called', value)
 
 
 if __name__ == "__main__":
