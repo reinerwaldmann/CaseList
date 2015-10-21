@@ -99,11 +99,11 @@ class TreeItem(object):
         return len(self.childItems)
 
     def columnCount(self):
-        return self.itemData.count()
+        return len(self.itemData)
 
     def data(self, column):
         try:
-            return self.itemData.value(column)
+            return self.itemData[column]
         except IndexError:
             return None
 
@@ -158,16 +158,9 @@ class TableToTreeModel2 (QAbstractItemModel):
 
         dct = dict () #словарь айди - список строк с данными
 
-
         for ind in range (self.dbmodel.rowCount()):
             #dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
-            dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = self.dbmodel.record(ind)
-            self.dbmodel.record(ind).setValue(12, 'sdfsdfsf')
-
-
-            #dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = ind
-            # получается словарь - айдишник к рекорду
-
+            dct[int(self.dbmodel.data(self.dbmodel.index(ind,0)))] = [self.dbmodel.data(self.dbmodel.index(ind,j)) for j in range(self.dbmodel.columnCount())]
 
 
         def find_children_and_append (item:TreeItem, dct):
@@ -180,8 +173,7 @@ class TableToTreeModel2 (QAbstractItemModel):
 
 
 
-        #for i in [j for j in dct.values() if j[8]=='[]']:
-        for i in [j for j in dct.values() if j.value(8)=='[]']:
+        for i in [j for j in dct.values() if j[8]=='[]']:
             tri = TreeItem(i, self.rootItem)
             find_children_and_append(tri,dct)
             self.rootItem.appendChild(tri)
@@ -242,6 +234,13 @@ class TableToTreeModel2 (QAbstractItemModel):
             return QModelIndex()
         return self.createIndex(parentItem.row(), 0, parentItem)
 
+
+    def getIndexById(self, _id):
+        for i in range (self.dbmodel.rowCount()):
+            if int (self.dbmodel.data(self.dbmodel.index(i,0)))==_id:
+                return self.dbmodel.index(i,0)
+        return QModelIndex()
+
     def setData(self, modelIndex, value, int_role=Qt.EditRole):
         """
         Функция вызывается при установке данных
@@ -250,7 +249,21 @@ class TableToTreeModel2 (QAbstractItemModel):
         :param int_role:
         :return:
         """
-        print ('setdata called', value)
+
+        print (self.dbmodel.record(0).setValue(12, 'sdfsfsdf'))
+
+        r = self.dbmodel.record(1)
+
+        r.setValue(12, 'Krevedko')
+        print (self.dbmodel.setRecord(0,r))
+
+
+        print (r)
+
+
+
+
+        return 1
 
 
 if __name__ == "__main__":
